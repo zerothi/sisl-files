@@ -1,0 +1,21 @@
+general:
+  SYSTEM = Graphite surface slap
+  ENMAX  = 400
+  ISMEAR =    2  ; SIGMA = 0.2
+  ALGO = Fast
+   
+charge output:
+  LCHARG = .TRUE.
+  LVHAR = .TRUE.
+
+partial charge densities:
+  LPARD = .TRUE.
+  LSEPK = .FALSE.
+  LSEPB = .FALSE.
+  NBMOD = -3
+  EINT = -0.1 0.1
+    
+#DOS:
+  #ISTART = 0
+  #ICHARG = 2
+  #LORBIT = 11
