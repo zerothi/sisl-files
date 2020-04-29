@@ -1,0 +1,43 @@
+SystemLabel H2_dynamical_matrix
+
+LatticeConstant 1.0 Ang
+%block LatticeVectors
+ 10.00000000 0.00000000 0.00000000
+ 0.00000000 10.00000000 0.00000000
+ 0.00000000 0.00000000 10.00000000
+%endblock LatticeVectors
+
+NumberOfSpecies 1
+%block ChemicalSpeciesLabel
+ 1 1 H
+%endblock ChemicalSpeciesLabel
+
+NumberOfAtoms 2
+AtomicCoordinatesFormat Ang
+%block AtomicCoordinatesAndAtomicSpecies
+ 4.56328523 5.00000000 5.00000000 1 # 1: H
+ 5.43671477 5.00000000 5.00000000 1 # 2: H
+%endblock AtomicCoordinatesAndAtomicSpecies
+
+# Define atomic masses
+%block AtomicMass
+ 1 1.0079
+%endblock
+
+PAO.BasisSize 	 SZ
+MaxSCFIterations 1000
+MeshCutoff 250 Ry
+XC.functional	GGA
+XC.authors	PBE
+SolutionMethod	diagonal 
+ElectronicTemperature 100.0 K
+OccupationFunction FD
+
+SCF.Mix   Hamiltonian
+SCF.H.Converge   T     # default value
+SCF.H.Tolerance  0.00005 eV
+
+MD.TypeOfRun           FC
+MD.FCfirst              1
+MD.FClast               2
+MD.FCdispl             0.0400000000  Bohr
