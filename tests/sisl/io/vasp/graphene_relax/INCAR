@@ -1,0 +1,9 @@
+ENMAX  = 400
+LWAVE  = F     
+LCHARG = F
+LREAL = Auto
+
+IBRION = 2
+NSW = 100
+ISIF = 3
+EDIFFG = -0.02
