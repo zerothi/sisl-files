@@ -1,0 +1,88 @@
+ running on   12 total cores
+ distrk:  each k-point on   12 cores,    1 groups
+ distr:  one band on    1 cores,   12 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Feb 29 2024 08:54:14) complex          
+  
+ POSCAR found type information on POSCAR  N  O 
+ POSCAR found :  2 types and       2 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default,   NCORE=1            might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You have a (more or less) 'small supercell' and for smaller cells      |
+|      it is recommended  to use the reciprocal-space projection scheme!      |
+|      The real space optimization is not  efficient for small cells and it   |
+|      is also less accurate ...                                              |
+|      Therefore set LREAL=.FALSE. in the  INCAR file                         |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.284875863417E+02    0.28488E+02   -0.77854E+03    24   0.950E+02
+DAV:   2    -0.108981535737E+02   -0.39386E+02   -0.39386E+02    24   0.180E+02
+DAV:   3    -0.115263505969E+02   -0.62820E+00   -0.62820E+00    48   0.262E+01
+DAV:   4    -0.115264472399E+02   -0.96643E-04   -0.96643E-04    24   0.322E-01
+DAV:   5    -0.115264474172E+02   -0.17725E-06   -0.17709E-06    36   0.140E-02    0.491E+00
+RMM:   6    -0.112876207828E+02    0.23883E+00   -0.31670E-01    24   0.438E+00    0.279E+00
+RMM:   7    -0.112120874961E+02    0.75533E-01   -0.51394E-02    24   0.172E+00    0.169E+00
+RMM:   8    -0.111837964234E+02    0.28291E-01   -0.48176E-02    24   0.174E+00    0.349E-01
+RMM:   9    -0.111836024487E+02    0.19397E-03   -0.16136E-03    24   0.352E-01    0.767E-02
+RMM:  10    -0.111835753490E+02    0.27100E-04   -0.15078E-04    24   0.105E-01    0.345E-02
+RMM:  11    -0.111835652508E+02    0.10098E-04   -0.25057E-05    24   0.399E-02    0.468E-03
+RMM:  12    -0.111835667878E+02   -0.15370E-05   -0.22219E-06    21   0.125E-02    0.343E-03
+RMM:  13    -0.111835665676E+02    0.22014E-06   -0.21622E-07    16   0.447E-03
+   1 F= -.11183567E+02 E0= -.11174163E+02  d E =-.111836E+02
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.164E-04 g(S)=  0.000E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.164E-04
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.111835201226E+02    0.46665E-04   -0.46173E-03    24   0.552E-01    0.181E-02
+RMM:   2    -0.111835170156E+02    0.31069E-05   -0.37831E-05    24   0.678E-02    0.116E-02
+RMM:   3    -0.111835153834E+02    0.16323E-05   -0.26840E-06    21   0.143E-02    0.566E-03
+RMM:   4    -0.111835149060E+02    0.47735E-06   -0.11147E-06    14   0.949E-03
+   2 F= -.11183515E+02 E0= -.11174112E+02  d E =0.516616E-04
+ trial-energy change:    0.000052  1 .order    0.000053   -0.000016    0.000121
+ step:   0.1190(harm=  0.1190)  dis= 0.00007  next Energy=   -11.183568 (dE=-0.976E-06)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.111835724563E+02   -0.57073E-04   -0.35742E-03    24   0.487E-01    0.157E-02
+RMM:   2    -0.111835696646E+02    0.27917E-05   -0.28844E-05    24   0.591E-02    0.101E-02
+RMM:   3    -0.111835682610E+02    0.14036E-05   -0.19562E-06    18   0.122E-02    0.486E-03
+RMM:   4    -0.111835677124E+02    0.54854E-06   -0.97144E-07    13   0.888E-03
+   3 F= -.11183568E+02 E0= -.11174165E+02  d E =-.114477E-05
+ curvature:  -0.06 expect dE=-0.140E-08 dE for cont linesearch -0.140E-08
+ trial: gam=-0.03646 g(F)=  0.236E-07 g(S)=  0.000E+00 ort = 0.622E-06 (trialstep = 0.824E+00)
+ search vector abs. value=  0.134E-09
+ reached required accuracy - stopping structural energy minimisation
