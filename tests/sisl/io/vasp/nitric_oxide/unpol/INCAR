@@ -1,0 +1,19 @@
+PREC = Accurate
+ENCUT = 600
+ALGO = FAST
+ADDGRID = .TRUE. ! accurate forces
+
+ISMEAR = 1       ! MP1
+SIGMA = 0.10
+
+ISPIN = 1
+
+LWAVE  = F     
+LCHARG = T
+LREAL = Auto
+
+IBRION = 2        ! CG
+NSW = 1000        ! ionic steps
+
+EDIFF = 1.00e-06
+EDIFFG = -0.01
