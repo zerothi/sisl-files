@@ -1,0 +1,17 @@
+PREC = Accurate
+ENCUT = 600
+ALGO = FAST
+
+ISMEAR = 0
+SIGMA = 0.1
+NEDOS = 400
+
+ISPIN = 2
+
+LWAVE  = F
+LCHARG = F
+LREAL = Auto
+
+NSW = 0
+
+LORBIT = 10
