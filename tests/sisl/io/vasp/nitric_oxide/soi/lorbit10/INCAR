@@ -1,0 +1,22 @@
+PREC = Accurate
+ENCUT = 600
+ALGO = FAST
+
+ISMEAR = 0
+SIGMA = 0.1
+
+NEDOS = 400
+
+LSORBIT = .TRUE.
+LMAXMIX = 4
+SAXIS = 0 0 1
+NBANDS = 24
+GGA_COMPAT = .FALSE. ! apply spherical cutoff on gradient field
+
+LWAVE  = F
+LCHARG = F
+LREAL = Auto
+
+NSW = 0
+
+LORBIT = 10
