@@ -12,14 +12,14 @@ NetCDF-4 support
 Runtime information:
 * Directory : /home/arnold/Documents/Code/SIESTA/ahkole-sisl-files/tests/sisl/io/siesta/stdout-charges/mulliken_voronoi_hirshfeld_pol_md_scf
 * Running in serial mode (only 1 MPI rank).
->> Start of run:  23-APR-2024  16:28:29
+>> Start of run:  23-APR-2024  17:44:35
 
                            *********************** 
                            *  WELCOME TO SIESTA  * 
                            *********************** 
 
 reinit: Reading from standard input
-reinit: Dumping input in INPUT_TMP.57511
+reinit: Dumping input in INPUT_TMP.22912
 ************************** Dump of input data file ****************************
 LatticeConstant 1.0 Ang
 %block LatticeVectors
@@ -397,20 +397,14 @@ refcount: 1>
 new_DM -- step:     1
 Initializing Density Matrix...
 
-Attempting to read DM from file... Succeeded...
-DM from file:
-<dSpData2D:IO-DM: siesta.DM
-  <sparsity:IO-DM: siesta.DM
-    nrows_g=26 nrows=26 sparsity=1.0000 nnzs=676, refcount: 1>
-  <dData2D:(new from dSpData2D) n=676 m=2, refcount: 1>
-refcount: 1>
-DM to be used:
-<dSpData2D:Re-structured SpM
+Attempting to read DM from file... Failed...
+DM filled with atomic data:
+<dSpData2D:DM initialized from atoms
   <sparsity:sparsity for geom step 0
     nrows_g=26 nrows=26 sparsity=1.0000 nnzs=676, refcount: 8>
-  <dData2D:(new in restruct) n=676 m=2, refcount: 1>
+  <dData2D:DM n=676 m=2, refcount: 1>
 refcount: 1>
-     spin moment: {S} , |S| = {        0.0        0.0   -0.00000 }    -0.00000
+     spin moment: {S} , |S| = {        0.0        0.0    4.00000 }     4.00000
 No. of atoms with KB's overlaping orbs in proc 0. Max # of overlaps:       2     151
 
 InitMesh: MESH = 24 x 24 x 150 = 86400
@@ -419,112 +413,62 @@ New grid distribution [1]: sub = 2
 
 Hirshfeld Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
-     1   -0.00001   4.00001   0.00000  C
-     2    0.00001   3.99999  -0.00000  C
+     1   -0.00000   4.00000   2.00001  C
+     2    0.00001   3.99999   1.99999  C
 -------------------------------------
- Total                       -0.00000
+ Total                        4.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
-     1   -0.02921   4.02921   0.00000  C
-     2    0.02922   3.97078  -0.00000  C
+     1   -0.00130   4.00130   2.01207  C
+     2    0.00131   3.99869   1.98793  C
 -------------------------------------
- Total                       -0.00000
+ Total                        4.00000
  
 
 stepf: Fermi-Dirac step function
 
 Hirshfeld Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
-     1    0.00001   3.99999   0.00000  C
-     2   -0.00000   4.00000  -0.00000  C
+     1   -0.00000   4.00000   0.00000  C
+     2    0.00001   3.99999  -0.00000  C
 -------------------------------------
  Total                        0.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
-     1   -0.03193   4.03193   0.00000  C
-     2    0.03194   3.96806  -0.00000  C
+     1   -0.03272   4.03272   0.00074  C
+     2    0.03272   3.96728  -0.00074  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
  
 
 siesta: Program's energy decomposition (eV):
-siesta: Ebs     =       -99.350087
+siesta: Ebs     =       -95.507939
 siesta: Eions   =       564.310478
 siesta: Ena     =       150.800224
-siesta: Ekin    =       253.183830
-siesta: Enl     =       -26.237907
+siesta: Ekin    =       255.809925
+siesta: Enl     =       -26.616923
 siesta: Eso     =         0.000000
 siesta: Edftu   =         0.000000
-siesta: DEna    =       -17.238965
-siesta: DUscf   =         2.162240
+siesta: DEna    =       -19.091846
+siesta: DUscf   =         2.376563
 siesta: DUext   =         0.000000
-siesta: Ex      =      -103.341114
-siesta: Ec      =       -13.904138
-siesta: Exc     =      -117.245252
+siesta: Ex      =      -103.851413
+siesta: Ec      =       -13.931131
+siesta: Exc     =      -117.782544
 siesta: EbV     =         0.000000
 siesta: eta*DQ  =         0.000000
 siesta: Emadel  =         0.000000
 siesta: Emeta   =         0.000000
 siesta: Emolmec =         0.000000
 siesta: Ekinion =         0.000000
-siesta: Eharris =      -318.796053
-siesta: Etot    =      -318.886308
-siesta: FreeEng =      -318.886308
+siesta: Eharris =      -311.112808
+siesta: Etot    =      -318.815079
+siesta: FreeEng =      -318.815079
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    1     -318.796053     -318.886308     -318.886308  0.050853 -2.097954  0.143700
-     spin moment: {S} , |S| = {        0.0        0.0   -0.00000 }    -0.00000
-
-Using DM_out for analysis:
-
-mulliken: Atomic and Orbital Populations:
-
-mulliken: Spin UP 
-
-Species: C                   
-Atom  Qatom  Qorb
-               2s      2s      2py     2pz     2px     2py     2pz     2px     
-               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
-   1  2.000   0.405   0.093   0.351   0.399   0.401   0.118   0.101   0.074
-              0.030  -0.000   0.003   0.000   0.025
-   2  2.000   0.404   0.094   0.352   0.399   0.401   0.117   0.101   0.074
-              0.030   0.000   0.003   0.000   0.025
-
-mulliken: Qtot =        4.000
-
-mulliken: Spin DOWN 
-
-Species: C                   
-Atom  Qatom  Qorb
-               2s      2s      2py     2pz     2px     2py     2pz     2px     
-               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
-   1  2.000   0.405   0.093   0.351   0.399   0.401   0.118   0.101   0.074
-              0.030  -0.000   0.003   0.000   0.025
-   2  2.000   0.404   0.094   0.352   0.399   0.401   0.117   0.101   0.074
-              0.030   0.000   0.003   0.000   0.025
-
-mulliken: Qtot =        4.000
-timer: Routine,Calls,Time,% = IterSCF        1       0.519  29.34
-
-Hirshfeld Atomic Populations:
-Atom #     dQatom  Atom pop        Sz  Species
-     1   -0.00002   4.00002   0.00000  C
-     2    0.00003   3.99997  -0.00000  C
--------------------------------------
- Total                       -0.00000
-
-Voronoi Atomic Populations:
-Atom #     dQatom  Atom pop        Sz  Species
-     1   -0.03149   4.03149   0.00000  C
-     2    0.03150   3.96850  -0.00000  C
--------------------------------------
- Total                       -0.00000
- 
-
-        iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    2     -318.888274     -318.887524     -318.887524  0.004276 -2.096560  0.040860
+   scf:    1     -311.112808     -318.815079     -318.815079  0.861301 -3.985117  3.393007
      spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
 
 Using DM_out for analysis:
@@ -537,10 +481,10 @@ Species: C
 Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
-   1  2.000   0.405   0.093   0.352   0.399   0.401   0.119   0.101   0.073
+   1  2.000   0.365   0.132   0.401   0.347   0.452   0.070   0.153   0.021
               0.030   0.000   0.003   0.000   0.026
-   2  2.000   0.404   0.094   0.352   0.399   0.402   0.118   0.101   0.073
-              0.029   0.000   0.003   0.000   0.026
+   2  2.000   0.364   0.133   0.402   0.347   0.453   0.069   0.153   0.021
+              0.030   0.000   0.003   0.000   0.026
 
 mulliken: Qtot =        4.000
 
@@ -550,16 +494,262 @@ Species: C
 Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
-   1  2.000   0.405   0.093   0.352   0.399   0.401   0.119   0.101   0.073
-              0.030   0.000   0.003   0.000   0.026
-   2  2.000   0.404   0.094   0.352   0.399   0.402   0.118   0.101   0.073
-              0.029   0.000   0.003   0.000   0.026
+   1  2.000   0.404   0.096   0.358   0.397   0.409   0.110   0.103   0.064
+              0.032   0.000   0.001   0.000   0.027
+   2  2.000   0.403   0.096   0.359   0.397   0.409   0.109   0.103   0.063
+              0.032   0.000   0.001   0.000   0.027
+
+mulliken: Qtot =        4.000
+timer: Routine,Calls,Time,% = IterSCF        1       0.448  30.77
+
+Hirshfeld Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.00000   4.00000   0.00000  C
+     2    0.00001   3.99999  -0.00000  C
+-------------------------------------
+ Total                        0.00000
+
+Voronoi Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.03240   4.03240   0.00058  C
+     2    0.03240   3.96760  -0.00058  C
+-------------------------------------
+ Total                        0.00000
+ 
+
+        iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
+   scf:    2     -318.883235     -318.849574     -318.849574  0.034542 -3.396897  2.351654
+     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
+
+Using DM_out for analysis:
+
+mulliken: Atomic and Orbital Populations:
+
+mulliken: Spin UP 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.376   0.122   0.388   0.362   0.439   0.082   0.138   0.035
+              0.030   0.000   0.002   0.000   0.026
+   2  2.000   0.375   0.123   0.389   0.362   0.439   0.081   0.138   0.035
+              0.030   0.000   0.002   0.000   0.026
+
+mulliken: Qtot =        4.000
+
+mulliken: Spin DOWN 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.405   0.094   0.355   0.400   0.406   0.114   0.100   0.067
+              0.031   0.000   0.001   0.000   0.027
+   2  2.000   0.404   0.094   0.356   0.400   0.406   0.113   0.100   0.067
+              0.031   0.000   0.001   0.000   0.027
 
 mulliken: Qtot =        4.000
 
 Hirshfeld Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
-     1   -0.00001   4.00001   0.00000  C
+     1   -0.00000   4.00000   0.00000  C
+     2    0.00001   3.99999  -0.00000  C
+-------------------------------------
+ Total                        0.00000
+
+Voronoi Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.03162   4.03162   0.00015  C
+     2    0.03163   3.96837  -0.00015  C
+-------------------------------------
+ Total                        0.00000
+ 
+
+        iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
+   scf:    3     -318.918952     -318.886291     -318.886291  0.080506 -2.089619  0.642405
+     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
+
+Using DM_out for analysis:
+
+mulliken: Atomic and Orbital Populations:
+
+mulliken: Spin UP 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.401   0.097   0.356   0.395   0.406   0.114   0.105   0.068
+              0.030   0.000   0.002   0.000   0.026
+   2  2.000   0.400   0.098   0.357   0.395   0.406   0.113   0.105   0.068
+              0.030   0.000   0.002   0.000   0.026
+
+mulliken: Qtot =        4.000
+
+mulliken: Spin DOWN 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.408   0.091   0.349   0.405   0.400   0.120   0.095   0.074
+              0.030   0.000   0.002   0.000   0.026
+   2  2.000   0.407   0.091   0.350   0.405   0.400   0.119   0.095   0.074
+              0.030   0.000   0.002   0.000   0.026
+
+mulliken: Qtot =        4.000
+
+Hirshfeld Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.00000   4.00000   0.00000  C
+     2    0.00001   3.99999  -0.00000  C
+-------------------------------------
+ Total                        0.00000
+
+Voronoi Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.03160   4.03160   0.00011  C
+     2    0.03160   3.96840  -0.00011  C
+-------------------------------------
+ Total                        0.00000
+ 
+
+        iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
+   scf:    4     -318.887559     -318.886922     -318.886922  0.003907 -2.081432  0.456235
+     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
+
+Using DM_out for analysis:
+
+mulliken: Atomic and Orbital Populations:
+
+mulliken: Spin UP 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.402   0.096   0.354   0.396   0.404   0.116   0.104   0.070
+              0.030   0.000   0.002   0.000   0.025
+   2  2.000   0.401   0.096   0.355   0.396   0.405   0.115   0.104   0.070
+              0.030   0.000   0.002   0.000   0.025
+
+mulliken: Qtot =        4.000
+
+mulliken: Spin DOWN 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.407   0.091   0.350   0.404   0.400   0.120   0.096   0.074
+              0.030   0.000   0.002   0.000   0.026
+   2  2.000   0.406   0.092   0.351   0.404   0.400   0.119   0.096   0.074
+              0.030   0.000   0.002   0.000   0.026
+
+mulliken: Qtot =        4.000
+
+Hirshfeld Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.00000   4.00000   0.00000  C
+     2    0.00001   3.99999  -0.00000  C
+-------------------------------------
+ Total                        0.00000
+
+Voronoi Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.03155   4.03155   0.00000  C
+     2    0.03155   3.96845  -0.00000  C
+-------------------------------------
+ Total                        0.00000
+ 
+
+        iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
+   scf:    5     -318.888332     -318.887612     -318.887612  0.008987 -2.098006  0.046321
+     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
+
+Using DM_out for analysis:
+
+mulliken: Atomic and Orbital Populations:
+
+mulliken: Spin UP 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.405   0.093   0.351   0.399   0.401   0.120   0.101   0.074
+              0.030   0.000   0.003   0.000   0.025
+   2  2.000   0.404   0.093   0.352   0.399   0.401   0.119   0.101   0.074
+              0.030   0.000   0.003   0.000   0.025
+
+mulliken: Qtot =        4.000
+
+mulliken: Spin DOWN 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.405   0.093   0.351   0.399   0.401   0.119   0.101   0.073
+              0.030   0.000   0.003   0.000   0.025
+   2  2.000   0.404   0.093   0.352   0.399   0.401   0.118   0.101   0.073
+              0.030   0.000   0.003   0.000   0.025
+
+mulliken: Qtot =        4.000
+
+Hirshfeld Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.00000   4.00000   0.00000  C
+     2    0.00001   3.99999  -0.00000  C
+-------------------------------------
+ Total                        0.00000
+
+Voronoi Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.03155   4.03155   0.00000  C
+     2    0.03156   3.96844  -0.00000  C
+-------------------------------------
+ Total                        0.00000
+ 
+
+        iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
+   scf:    6     -318.887626     -318.887619     -318.887619  0.000503 -2.098725  0.031213
+     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
+
+Using DM_out for analysis:
+
+mulliken: Atomic and Orbital Populations:
+
+mulliken: Spin UP 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.405   0.093   0.351   0.399   0.401   0.119   0.101   0.074
+              0.030   0.000   0.003   0.000   0.025
+   2  2.000   0.404   0.093   0.352   0.399   0.401   0.118   0.101   0.073
+              0.030   0.000   0.003   0.000   0.025
+
+mulliken: Qtot =        4.000
+
+mulliken: Spin DOWN 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.405   0.093   0.351   0.399   0.401   0.119   0.101   0.073
+              0.030   0.000   0.003   0.000   0.025
+   2  2.000   0.404   0.093   0.352   0.399   0.401   0.118   0.101   0.073
+              0.030   0.000   0.003   0.000   0.025
+
+mulliken: Qtot =        4.000
+
+Hirshfeld Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.00000   4.00000   0.00000  C
      2    0.00001   3.99999  -0.00000  C
 -------------------------------------
  Total                        0.00000
@@ -567,13 +757,62 @@ Atom #     dQatom  Atom pop        Sz  Species
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
      1   -0.03157   4.03157   0.00000  C
-     2    0.03158   3.96842  -0.00000  C
+     2    0.03157   3.96843  -0.00000  C
 -------------------------------------
  Total                        0.00000
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    3     -318.887705     -318.887625     -318.887625  0.000922 -2.096531  0.002305
+   scf:    7     -318.887631     -318.887626     -318.887626  0.001061 -2.099159  0.006968
+     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
+
+Using DM_out for analysis:
+
+mulliken: Atomic and Orbital Populations:
+
+mulliken: Spin UP 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.405   0.093   0.351   0.399   0.401   0.119   0.101   0.073
+              0.030   0.000   0.003   0.000   0.025
+   2  2.000   0.404   0.094   0.352   0.399   0.401   0.118   0.101   0.073
+              0.030   0.000   0.003   0.000   0.025
+
+mulliken: Qtot =        4.000
+
+mulliken: Spin DOWN 
+
+Species: C                   
+Atom  Qatom  Qorb
+               2s      2s      2py     2pz     2px     2py     2pz     2px     
+               3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
+   1  2.000   0.405   0.093   0.351   0.399   0.401   0.119   0.101   0.073
+              0.030   0.000   0.003   0.000   0.025
+   2  2.000   0.404   0.094   0.352   0.399   0.402   0.118   0.101   0.073
+              0.030   0.000   0.003   0.000   0.025
+
+mulliken: Qtot =        4.000
+
+Hirshfeld Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.00000   4.00000   0.00000  C
+     2    0.00001   3.99999  -0.00000  C
+-------------------------------------
+ Total                        0.00000
+
+Voronoi Atomic Populations:
+Atom #     dQatom  Atom pop        Sz  Species
+     1   -0.03157   4.03157   0.00000  C
+     2    0.03157   3.96843  -0.00000  C
+-------------------------------------
+ Total                        0.00000
+ 
+
+        iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
+   scf:    8     -318.887626     -318.887626     -318.887626  0.000054 -2.098410  0.005210
      spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
 
 Using DM_out for analysis:
@@ -611,7 +850,7 @@ Atom #     dQatom  Atom pop        Sz  Species
      1   -0.00000   4.00000   0.00000  C
      2    0.00001   3.99999  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
@@ -622,7 +861,7 @@ Atom #     dQatom  Atom pop        Sz  Species
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    4     -318.887626     -318.887626     -318.887626  0.000032 -2.096424  0.001679
+   scf:    9     -318.887626     -318.887626     -318.887626  0.000148 -2.096434  0.000422
      spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
 
 Using DM_out for analysis:
@@ -664,14 +903,14 @@ Atom #     dQatom  Atom pop        Sz  Species
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
-     1   -0.03156   4.03156   0.00000  C
+     1   -0.03157   4.03157   0.00000  C
      2    0.03157   3.96843  -0.00000  C
 -------------------------------------
  Total                        0.00000
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    5     -318.887626     -318.887626     -318.887626  0.000088 -2.096155  0.000172
+   scf:   10     -318.887626     -318.887626     -318.887626  0.000004 -2.096357  0.000282
      spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
 
 Using DM_out for analysis:
@@ -705,9 +944,9 @@ Atom  Qatom  Qorb
 mulliken: Qtot =        4.000
 
 SCF Convergence by DM+H criterion
-max |DM_out - DM_in|         :     0.0000881661
-max |H_out - H_in|      (eV) :     0.0001715129
-SCF cycle converged after 5 iterations
+max |DM_out - DM_in|         :     0.0000039794
+max |H_out - H_in|      (eV) :     0.0002817141
+SCF cycle converged after 10 iterations
 
 Using DM_out to compute the final energy and forces
 No. of atoms with KB's overlaping orbs in proc 0. Max # of overlaps:       2     151
@@ -721,7 +960,7 @@ Atom #     dQatom  Atom pop        Sz  Species
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
-     1   -0.03156   4.03156   0.00000  C
+     1   -0.03157   4.03157   0.00000  C
      2    0.03157   3.96843  -0.00000  C
 -------------------------------------
  Total                        0.00000
@@ -736,13 +975,13 @@ siesta: Atomic forces (eV/Ang):
 ----------------------------------------
    Tot   -0.016146   -0.000000   -0.000000
 ----------------------------------------
-   Max    5.089415
-   Res    2.933718    sqrt( Sum f_i^2 / 3N )
+   Max    5.089627
+   Res    2.933841    sqrt( Sum f_i^2 / 3N )
 ----------------------------------------
-   Max    5.089415    constrained
+   Max    5.089627    constrained
 
-Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):     -126.48      -56.97        0.04       -0.00       -0.00       -0.00
-(Free)E + p*V (eV/cell)     -316.0490
+Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):     -126.47      -56.97        0.04        0.00        0.00       -0.00
+(Free)E + p*V (eV/cell)     -316.0492
 Target enthalpy (eV/cell)     -318.8876
 
 mulliken: Atomic and Orbital Populations:
@@ -805,7 +1044,7 @@ New DM after history re-use:
   <dData2D:(temp array for extrapolation) n=676 m=2, refcount: 1>
 refcount: 1>
      spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
-Note: For starting DM, Qtot, Tr[D*S] =          8.00000000          7.98365016
+Note: For starting DM, Qtot, Tr[D*S] =          8.00000000          7.98364893
 No. of atoms with KB's overlaping orbs in proc 0. Max # of overlaps:       2     151
 
 InitMesh: MESH = 24 x 24 x 150 = 86400
@@ -815,7 +1054,7 @@ New grid distribution [1]: sub = 2
 Hirshfeld Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
      1    0.00000   4.00000   0.00000  C
-     2    0.00000   4.00000  -0.00000  C
+     2    0.00001   3.99999   0.00000  C
 -------------------------------------
  Total                        0.00000
 
@@ -829,7 +1068,7 @@ Atom #     dQatom  Atom pop        Sz  Species
 
 Hirshfeld Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
-     1    0.00001   3.99999   0.00000  C
+     1    0.00002   3.99998   0.00000  C
      2   -0.00001   4.00001  -0.00000  C
 -------------------------------------
  Total                        0.00000
@@ -837,13 +1076,13 @@ Atom #     dQatom  Atom pop        Sz  Species
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
      1   -0.01303   4.01303   0.00000  C
-     2    0.01304   3.98696  -0.00000  C
+     2    0.01303   3.98697  -0.00000  C
 -------------------------------------
  Total                        0.00000
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    1     -317.515633     -318.287564     -318.287564  0.156761 -2.019479  0.433220
+   scf:    1     -317.515643     -318.287565     -318.287565  0.156753 -2.019419  0.433206
      spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
 
 Using DM_out for analysis:
@@ -878,21 +1117,21 @@ mulliken: Qtot =        4.000
 
 Hirshfeld Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
-     1   -0.00001   4.00001   0.00000  C
+     1   -0.00002   4.00002   0.00000  C
      2    0.00002   3.99998  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
-     1   -0.01406   4.01406   0.00000  C
-     2    0.01406   3.98594  -0.00000  C
+     1   -0.01407   4.01407   0.00000  C
+     2    0.01407   3.98593  -0.00000  C
 -------------------------------------
  Total                        0.00000
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    2     -318.308433     -318.300353     -318.300353  0.017450 -2.039757  0.120240
+   scf:    2     -318.308432     -318.300353     -318.300353  0.017446 -2.039778  0.120237
      spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
 
 Using DM_out for analysis:
@@ -907,7 +1146,7 @@ Atom  Qatom  Qorb
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.096   0.443   0.396   0.317   0.035   0.104   0.148
               0.023   0.000   0.002   0.000   0.033
-   2  2.000   0.404   0.096   0.442   0.396   0.319   0.036   0.104   0.147
+   2  2.000   0.404   0.096   0.442   0.396   0.318   0.036   0.104   0.147
               0.023   0.000   0.002   0.000   0.033
 
 mulliken: Qtot =        4.000
@@ -920,7 +1159,7 @@ Atom  Qatom  Qorb
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.096   0.443   0.396   0.317   0.035   0.104   0.148
               0.023   0.000   0.002   0.000   0.033
-   2  2.000   0.404   0.096   0.442   0.396   0.319   0.036   0.104   0.147
+   2  2.000   0.404   0.096   0.442   0.396   0.318   0.036   0.104   0.147
               0.023   0.000   0.002   0.000   0.033
 
 mulliken: Qtot =        4.000
@@ -930,7 +1169,7 @@ Atom #     dQatom  Atom pop        Sz  Species
      1    0.00000   4.00000   0.00000  C
      2    0.00000   4.00000  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
@@ -941,7 +1180,7 @@ Atom #     dQatom  Atom pop        Sz  Species
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    3     -318.302156     -318.301363     -318.301363  0.003656 -2.032810  0.010553
+   scf:    3     -318.302156     -318.301363     -318.301363  0.003653 -2.032813  0.010570
      spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
 
 Using DM_out for analysis:
@@ -983,15 +1222,15 @@ Atom #     dQatom  Atom pop        Sz  Species
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
-     1   -0.01382   4.01382   0.00000  C
+     1   -0.01383   4.01383   0.00000  C
      2    0.01383   3.98617  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    4     -318.301367     -318.301365     -318.301365  0.000050 -2.031786  0.007574
-     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
+   scf:    4     -318.301367     -318.301365     -318.301365  0.000050 -2.031787  0.007581
+     spin moment: {S} , |S| = {        0.0        0.0   -0.00000 }    -0.00000
 
 Using DM_out for analysis:
 
@@ -1028,7 +1267,7 @@ Atom #     dQatom  Atom pop        Sz  Species
      1    0.00001   3.99999   0.00000  C
      2   -0.00000   4.00000  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
@@ -1039,8 +1278,8 @@ Atom #     dQatom  Atom pop        Sz  Species
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    5     -318.301369     -318.301367     -318.301367  0.000128 -2.029317  0.000674
-     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
+   scf:    5     -318.301369     -318.301367     -318.301367  0.000128 -2.029317  0.000680
+     spin moment: {S} , |S| = {        0.0        0.0   -0.00000 }    -0.00000
 
 Using DM_out for analysis:
 
@@ -1075,21 +1314,21 @@ mulliken: Qtot =        4.000
 Hirshfeld Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
      1    0.00001   3.99999   0.00000  C
-     2    0.00000   4.00000  -0.00000  C
+     2   -0.00000   4.00000  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
      1   -0.01383   4.01383   0.00000  C
      2    0.01383   3.98617  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    6     -318.301367     -318.301367     -318.301367  0.000005 -2.029339  0.000465
-     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
+   scf:    6     -318.301367     -318.301367     -318.301367  0.000006 -2.029339  0.000467
+     spin moment: {S} , |S| = {        0.0        0.0   -0.00000 }    -0.00000
 
 Using DM_out for analysis:
 
@@ -1122,8 +1361,8 @@ Atom  Qatom  Qorb
 mulliken: Qtot =        4.000
 
 SCF Convergence by DM+H criterion
-max |DM_out - DM_in|         :     0.0000053661
-max |H_out - H_in|      (eV) :     0.0004653389
+max |DM_out - DM_in|         :     0.0000055232
+max |H_out - H_in|      (eV) :     0.0004673470
 SCF cycle converged after 6 iterations
 
 Using DM_out to compute the final energy and forces
@@ -1132,31 +1371,31 @@ No. of atoms with KB's overlaping orbs in proc 0. Max # of overlaps:       2    
 Hirshfeld Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
      1    0.00001   3.99999   0.00000  C
-     2    0.00000   4.00000  -0.00000  C
+     2   -0.00000   4.00000  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
      1   -0.01383   4.01383   0.00000  C
      2    0.01383   3.98617  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
  
 
 siesta: E_KS(eV) =             -318.3014
-     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
+     spin moment: {S} , |S| = {        0.0        0.0   -0.00000 }    -0.00000
 
 siesta: Atomic forces (eV/Ang):
 ----------------------------------------
-   Tot    0.019703   -0.000000    0.000000
+   Tot    0.019703    0.000000    0.000000
 ----------------------------------------
-   Max   12.128255
-   Res    6.996566    sqrt( Sum f_i^2 / 3N )
+   Max   12.128253
+   Res    6.996565    sqrt( Sum f_i^2 / 3N )
 ----------------------------------------
-   Max   12.128255    constrained
+   Max   12.128253    constrained
 
-Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):      -13.36     -210.79        0.04       -0.00       -0.00        0.00
+Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):      -13.36     -210.79        0.04        0.00        0.00        0.00
 (Free)E + p*V (eV/cell)     -314.8328
 Target enthalpy (eV/cell)     -318.3014
 
@@ -1220,7 +1459,7 @@ New DM after history re-use:
   <dData2D:(temp array for extrapolation) n=676 m=2, refcount: 1>
 refcount: 1>
      spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
-Note: For starting DM, Qtot, Tr[D*S] =          8.00000000          8.03190319
+Note: For starting DM, Qtot, Tr[D*S] =          8.00000000          8.03190311
 No. of atoms with KB's overlaping orbs in proc 0. Max # of overlaps:       2     151
 
 InitMesh: MESH = 24 x 24 x 150 = 86400
@@ -1232,7 +1471,7 @@ Atom #     dQatom  Atom pop        Sz  Species
      1    0.00002   3.99998   0.00000  C
      2   -0.00002   4.00002  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
@@ -1247,7 +1486,7 @@ Atom #     dQatom  Atom pop        Sz  Species
      1   -0.00003   4.00003   0.00000  C
      2    0.00003   3.99997  -0.00000  C
 -------------------------------------
- Total                        0.00000
+ Total                       -0.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
@@ -1258,8 +1497,8 @@ Atom #     dQatom  Atom pop        Sz  Species
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    1     -319.213287     -318.980158     -318.980158  0.116129 -2.047423  0.316008
-     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
+   scf:    1     -319.213290     -318.980158     -318.980158  0.116129 -2.047424  0.316004
+     spin moment: {S} , |S| = {        0.0        0.0   -0.00000 }    -0.00000
 
 Using DM_out for analysis:
 
@@ -1296,7 +1535,7 @@ Atom #     dQatom  Atom pop        Sz  Species
      1    0.00006   3.99994   0.00000  C
      2   -0.00006   4.00006  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
@@ -1307,7 +1546,7 @@ Atom #     dQatom  Atom pop        Sz  Species
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    2     -318.990294     -318.986418     -318.986418  0.009737 -2.133862  0.089413
+   scf:    2     -318.990293     -318.986417     -318.986417  0.009737 -2.133862  0.089412
      spin moment: {S} , |S| = {        0.0        0.0   -0.00000 }    -0.00000
 
 Using DM_out for analysis:
@@ -1356,7 +1595,7 @@ Atom #     dQatom  Atom pop        Sz  Species
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    3     -318.987323     -318.986929     -318.986929  0.002129 -2.111406  0.011322
+   scf:    3     -318.987323     -318.986928     -318.986928  0.002129 -2.111406  0.011323
      spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
 
 Using DM_out for analysis:
@@ -1370,7 +1609,7 @@ Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.093   0.378   0.399   0.373   0.095   0.101   0.099
-              0.027   0.000   0.003   0.000   0.028
+              0.027  -0.000   0.003   0.000   0.028
    2  2.000   0.404   0.093   0.379   0.399   0.373   0.094   0.101   0.100
               0.027   0.000   0.003   0.000   0.028
 
@@ -1383,7 +1622,7 @@ Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.093   0.378   0.399   0.373   0.095   0.101   0.099
-              0.027   0.000   0.003   0.000   0.028
+              0.027  -0.000   0.003   0.000   0.028
    2  2.000   0.404   0.093   0.379   0.399   0.373   0.094   0.101   0.100
               0.027   0.000   0.003   0.000   0.028
 
@@ -1401,11 +1640,11 @@ Atom #     dQatom  Atom pop        Sz  Species
      1   -0.00428   4.00428   0.00000  C
      2    0.00429   3.99571  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    4     -318.986931     -318.986930     -318.986930  0.000052 -2.109833  0.007946
+   scf:    4     -318.986930     -318.986929     -318.986929  0.000052 -2.109833  0.007947
      spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
 
 Using DM_out for analysis:
@@ -1419,7 +1658,7 @@ Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.093   0.378   0.399   0.373   0.095   0.101   0.099
-              0.027   0.000   0.003   0.000   0.028
+              0.027  -0.000   0.003   0.000   0.028
    2  2.000   0.404   0.093   0.379   0.399   0.373   0.094   0.101   0.100
               0.027   0.000   0.003   0.000   0.028
 
@@ -1432,7 +1671,7 @@ Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.093   0.378   0.399   0.373   0.095   0.101   0.099
-              0.027   0.000   0.003   0.000   0.028
+              0.027  -0.000   0.003   0.000   0.028
    2  2.000   0.404   0.093   0.379   0.399   0.373   0.094   0.101   0.100
               0.027   0.000   0.003   0.000   0.028
 
@@ -1443,19 +1682,19 @@ Atom #     dQatom  Atom pop        Sz  Species
      1   -0.00000   4.00000   0.00000  C
      2    0.00001   3.99999  -0.00000  C
 -------------------------------------
- Total                        0.00000
+ Total                       -0.00000
 
 Voronoi Atomic Populations:
 Atom #     dQatom  Atom pop        Sz  Species
      1   -0.00429   4.00429   0.00000  C
      2    0.00429   3.99571  -0.00000  C
 -------------------------------------
- Total                       -0.00000
+ Total                        0.00000
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    5     -318.986932     -318.986931     -318.986931  0.000108 -2.106610  0.001371
-     spin moment: {S} , |S| = {        0.0        0.0   -0.00000 }    -0.00000
+   scf:    5     -318.986931     -318.986930     -318.986930  0.000108 -2.106610  0.001371
+     spin moment: {S} , |S| = {        0.0        0.0    0.00000 }     0.00000
 
 Using DM_out for analysis:
 
@@ -1468,7 +1707,7 @@ Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.093   0.378   0.399   0.374   0.095   0.101   0.099
-              0.027   0.000   0.003   0.000   0.028
+              0.027  -0.000   0.003   0.000   0.028
    2  2.000   0.404   0.093   0.379   0.399   0.373   0.094   0.101   0.099
               0.027   0.000   0.003   0.000   0.028
 
@@ -1481,7 +1720,7 @@ Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.093   0.378   0.399   0.374   0.095   0.101   0.099
-              0.027   0.000   0.003   0.000   0.028
+              0.027  -0.000   0.003   0.000   0.028
    2  2.000   0.404   0.093   0.379   0.399   0.373   0.094   0.101   0.099
               0.027   0.000   0.003   0.000   0.028
 
@@ -1503,7 +1742,7 @@ Atom #     dQatom  Atom pop        Sz  Species
  
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    6     -318.986931     -318.986931     -318.986931  0.000013 -2.106600  0.000968
+   scf:    6     -318.986930     -318.986930     -318.986930  0.000013 -2.106600  0.000968
      spin moment: {S} , |S| = {        0.0        0.0   -0.00000 }    -0.00000
 
 Using DM_out for analysis:
@@ -1517,7 +1756,7 @@ Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.093   0.378   0.399   0.374   0.095   0.101   0.099
-              0.027   0.000   0.003   0.000   0.028
+              0.027  -0.000   0.003   0.000   0.028
    2  2.000   0.404   0.093   0.379   0.399   0.373   0.094   0.101   0.099
               0.027   0.000   0.003   0.000   0.028
 
@@ -1530,15 +1769,15 @@ Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.093   0.378   0.399   0.374   0.095   0.101   0.099
-              0.027   0.000   0.003   0.000   0.028
+              0.027  -0.000   0.003   0.000   0.028
    2  2.000   0.404   0.093   0.379   0.399   0.373   0.094   0.101   0.099
               0.027   0.000   0.003   0.000   0.028
 
 mulliken: Qtot =        4.000
 
 SCF Convergence by DM+H criterion
-max |DM_out - DM_in|         :     0.0000130699
-max |H_out - H_in|      (eV) :     0.0009679285
+max |DM_out - DM_in|         :     0.0000130786
+max |H_out - H_in|      (eV) :     0.0009680179
 SCF cycle converged after 6 iterations
 
 Using DM_out to compute the final energy and forces
@@ -1564,14 +1803,14 @@ siesta: E_KS(eV) =             -318.9869
 
 siesta: Atomic forces (eV/Ang):
 ----------------------------------------
-   Tot    0.010504   -0.000000    0.000000
+   Tot    0.010503    0.000000   -0.000000
 ----------------------------------------
-   Max    0.519392
-   Res    0.296855    sqrt( Sum f_i^2 / 3N )
+   Max    0.519554
+   Res    0.296948    sqrt( Sum f_i^2 / 3N )
 ----------------------------------------
-   Max    0.519392    constrained
+   Max    0.519554    constrained
 
-Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):      -86.02      -92.59        0.03        0.00        0.00        0.00
+Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):      -86.02      -92.59        0.03        0.00        0.00       -0.00
 (Free)E + p*V (eV/cell)     -316.2231
 Target enthalpy (eV/cell)     -318.9869
 
@@ -1584,7 +1823,7 @@ Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.093   0.378   0.399   0.374   0.095   0.101   0.099
-              0.027   0.000   0.003   0.000   0.028
+              0.027  -0.000   0.003   0.000   0.028
    2  2.000   0.404   0.093   0.379   0.399   0.373   0.094   0.101   0.099
               0.027   0.000   0.003   0.000   0.028
 
@@ -1597,7 +1836,7 @@ Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  2.000   0.404   0.093   0.378   0.399   0.374   0.095   0.101   0.099
-              0.027   0.000   0.003   0.000   0.028
+              0.027  -0.000   0.003   0.000   0.028
    2  2.000   0.404   0.093   0.379   0.399   0.373   0.094   0.101   0.099
               0.027   0.000   0.003   0.000   0.028
 
@@ -1606,18 +1845,18 @@ mulliken: Qtot =        4.000
 cgvc: Finished line minimization    1.  Mean atomic displacement =    0.0418
 
 outcoor: Final (unrelaxed) atomic coordinates (Ang):        
-   -0.02214429   -0.00000000   -0.00000000   1       1  C
-    1.40207404   -0.00000000   -0.00000000   1       2  C
+   -0.02214495   -0.00000000   -0.00000000   1       1  C
+    1.40207469   -0.00000000   -0.00000000   1       2  C
 
 siesta: Program's energy decomposition (eV):
-siesta: Ebs     =       -99.367836
+siesta: Ebs     =       -99.367835
 siesta: Eions   =       564.310478
 siesta: Ena     =       150.787390
-siesta: Ekin    =       253.050398
-siesta: Enl     =       -26.231346
+siesta: Ekin    =       253.050395
+siesta: Enl     =       -26.231344
 siesta: Eso     =         0.000000
 siesta: Edftu   =         0.000000
-siesta: DEna    =       -17.210486
+siesta: DEna    =       -17.210484
 siesta: DUscf   =         2.158960
 siesta: DUext   =         0.000000
 siesta: Ex      =      -103.327807
@@ -1629,13 +1868,13 @@ siesta: Emadel  =         0.000000
 siesta: Emeta   =         0.000000
 siesta: Emolmec =         0.000000
 siesta: Ekinion =         0.000000
-siesta: Eharris =      -318.986931
-siesta: Etot    =      -318.986931
-siesta: FreeEng =      -318.986931
+siesta: Eharris =      -318.986930
+siesta: Etot    =      -318.986930
+siesta: FreeEng =      -318.986930
 
 siesta: Final energy (eV):
-siesta:  Band Struct. =     -99.367836
-siesta:       Kinetic =     253.050398
+siesta:  Band Struct. =     -99.367835
+siesta:       Kinetic =     253.050395
 siesta:       Hartree =    1023.813533
 siesta:         Edftu =       0.000000
 siesta:       Eso     =       0.000000
@@ -1644,33 +1883,33 @@ siesta:         Exch. =    -103.327807
 siesta:         Corr. =     -13.903562
 siesta:     Bulk bias =       0.000000
 siesta:   Exch.-corr. =    -117.231369
-siesta:  Ion-electron =   -2270.512860
+siesta:  Ion-electron =   -2270.512856
 siesta:       Ion-ion =     791.893367
 siesta:       Ekinion =       0.000000
 siesta: D3 dispersion =       0.000000
-siesta:         Total =    -318.986931
+siesta:         Total =    -318.986930
 siesta:         Fermi =      -2.106600
 
 siesta: Atomic forces (eV/Ang):
-siesta:      1    0.519392   -0.000000    0.000000
-siesta:      2   -0.508889    0.000000   -0.000000
+siesta:      1    0.519554   -0.000000    0.000000
+siesta:      2   -0.509050    0.000000   -0.000000
 siesta: ----------------------------------------
-siesta:    Tot    0.010504   -0.000000    0.000000
+siesta:    Tot    0.010503    0.000000   -0.000000
 
 siesta: Stress tensor (static) (eV/Ang**3):
-siesta:    -0.053690    0.000000    0.000000
-siesta:     0.000000   -0.057788    0.000000
+siesta:    -0.053689    0.000000    0.000000
+siesta:    -0.000000   -0.057788    0.000000
 siesta:     0.000000    0.000000    0.000020
 
 siesta: Cell volume =         74.390404 Ang**3
 
 siesta: Pressure (static):
 siesta:                Solid            Molecule  Units
-siesta:           0.00040464          0.00044038  Ry/Bohr**3
-siesta:           0.03715240          0.04043351  eV/Ang**3
-siesta:          59.52471507         64.78162629  kBar
-(Free)E+ p_basis*V_orbitals  =        -318.205235
-(Free)Eharris+ p_basis*V_orbitals  =        -318.205235
+siesta:           0.00040464          0.00044039  Ry/Bohr**3
+siesta:           0.03715243          0.04043457  eV/Ang**3
+siesta:          59.52476097         64.78332581  kBar
+(Free)E+ p_basis*V_orbitals  =        -318.205234
+(Free)Eharris+ p_basis*V_orbitals  =        -318.205234
      spin moment: {S} , |S| = {        0.0        0.0   -0.00000 }    -0.00000
 
 siesta: Electric dipole (a.u.)  =    0.000000    0.000000   -0.000000
@@ -1684,65 +1923,65 @@ cite: which are encouraged to be cited in a published work.
           DOI: www.doi.org/10.1088/0953-8984/14/11/302
 
 
-timer: Elapsed wall time (sec) =      17.639
+timer: Elapsed wall time (sec) =      18.482
 timer: CPU execution times (sec):
 
 Routine            Calls   Time/call    Tot.time        %
-siesta                 1      17.594      17.594   100.00
-Setup                  1       0.092       0.092     0.52
+siesta                 1      18.456      18.456   100.00
+Setup                  1       0.096       0.096     0.52
 bands                  1       0.000       0.000     0.00
 KSV_init               1       0.000       0.000     0.00
-IterGeom               3       5.834      17.501    99.47
-geom_init              3       0.850       2.549    14.49
-state_init             3       0.037       0.111     0.63
+IterGeom               3       6.120      18.359    99.47
+geom_init              3       0.739       2.218    12.02
+state_init             3       0.036       0.108     0.59
 hsparse                3       0.001       0.002     0.01
-overlap                3       0.036       0.107     0.61
-Setup_H0               3       0.326       0.977     5.55
-naefs                  6       0.000       0.001     0.00
+overlap                3       0.035       0.104     0.56
+Setup_H0               3       0.265       0.796     4.31
+naefs                  6       0.000       0.000     0.00
 MolMec                 6       0.000       0.000     0.00
-kinefsm                6       0.024       0.142     0.81
-nlefsm                 6       0.024       0.142     0.81
-DHSCF_Init             3       0.243       0.729     4.14
-DHSCF1                 3       0.023       0.070     0.40
+kinefsm                6       0.018       0.110     0.60
+nlefsm                 6       0.019       0.115     0.62
+DHSCF_Init             3       0.202       0.605     3.28
+DHSCF1                 3       0.022       0.067     0.37
 INITMESH               3       0.000       0.000     0.00
-DHSCF2                 3       0.220       0.659     3.75
-REMESH                 3       0.009       0.026     0.15
-REORD                215       0.000       0.025     0.14
-PHION                  3       0.181       0.542     3.08
-COMM_BSC             265       0.000       0.025     0.14
-POISON                26       0.010       0.267     1.52
-fft                   52       0.005       0.239     1.36
-setup_H               20       0.493       9.855    56.01
-DHSCF                 23       0.711      16.347    92.91
-DHSCF3                23       0.492      11.326    64.37
-rhoofd                23       0.142       3.261    18.53
-partial-charges       23       0.197       4.540    25.81
-XC                    23       0.009       0.202     1.15
-GXC-CellXC            23       0.008       0.187     1.06
-gridxc@cellXC         23       0.008       0.187     1.06
-vmat                  23       0.131       3.012    17.12
-IterSCF               17       0.495       8.407    47.79
-compute_dm            17       0.000       0.008     0.05
-diagon                17       0.000       0.006     0.03
-r-eigvec              34       0.000       0.005     0.03
-r-buildHS             34       0.000       0.000     0.00
-rdiag                 34       0.000       0.004     0.03
-rdiag1                34       0.000       0.000     0.00
-rdiag2                34       0.000       0.001     0.00
-rdiag3                34       0.000       0.003     0.02
-rdiag4                34       0.000       0.000     0.00
-r-buildD              17       0.000       0.001     0.00
-MIXER                 14       0.000       0.000     0.00
-PostSCF                3       2.181       6.543    37.19
-DHSCF4                 3       1.674       5.021    28.54
-dfscf                  3       1.653       4.960    28.19
-overfsm                3       0.004       0.012     0.07
+DHSCF2                 3       0.179       0.537     2.91
+REMESH                 3       0.009       0.026     0.14
+REORD                250       0.000       0.024     0.13
+PHION                  3       0.145       0.434     2.35
+COMM_BSC             320       0.000       0.026     0.14
+POISON                31       0.011       0.334     1.81
+fft                   62       0.005       0.300     1.62
+setup_H               25       0.454      11.348    61.49
+DHSCF                 28       0.621      17.389    94.22
+DHSCF3                28       0.454      12.713    68.88
+rhoofd                28       0.132       3.688    19.98
+partial-charges       28       0.182       5.095    27.61
+XC                    28       0.008       0.236     1.28
+GXC-CellXC            28       0.008       0.215     1.17
+gridxc@cellXC         28       0.008       0.215     1.17
+vmat                  28       0.118       3.293    17.84
+IterSCF               22       0.457      10.050    54.45
+compute_dm            22       0.000       0.010     0.05
+diagon                22       0.000       0.007     0.04
+r-eigvec              44       0.000       0.006     0.03
+r-buildHS             44       0.000       0.000     0.00
+rdiag                 44       0.000       0.005     0.03
+rdiag1                44       0.000       0.000     0.00
+rdiag2                44       0.000       0.001     0.00
+rdiag3                44       0.000       0.004     0.02
+rdiag4                44       0.000       0.000     0.00
+r-buildD              22       0.000       0.001     0.00
+MIXER                 19       0.000       0.001     0.00
+PostSCF                3       2.030       6.089    32.99
+DHSCF4                 3       1.559       4.676    25.34
+dfscf                  3       1.540       4.619    25.02
+overfsm                3       0.004       0.011     0.06
 writeHSX               3       0.000       0.000     0.00
-state_analysis         3       0.000       0.001     0.01
+state_analysis         3       0.000       0.001     0.00
 siesta_move            3       0.000       0.001     0.00
 Analysis               1       0.001       0.001     0.00
 optical                1       0.000       0.000     0.00
   
 
->> End of run:  23-APR-2024  16:28:47
+>> End of run:  23-APR-2024  17:44:53
 Job completed
