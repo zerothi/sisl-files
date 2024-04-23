@@ -21,3 +21,4 @@ WriteVoronoiPop t
 PartialChargesAtEveryGeometry t
 #PartialChargesAtEverySCFStep t
 WriteMullikenPop 1
+Write.DMHS.History.NetCDF t

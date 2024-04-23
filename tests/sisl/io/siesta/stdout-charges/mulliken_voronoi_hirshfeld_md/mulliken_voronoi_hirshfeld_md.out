@@ -10,16 +10,16 @@ NetCDF support
 NetCDF-4 support
 
 Runtime information:
-* Directory : /home/arnold/Documents/Code/SIESTA/ahkole-sisl-files/tests/sisl/io/siesta/outs
+* Directory : /home/arnold/Documents/Code/SIESTA/ahkole-sisl-files/tests/sisl/io/siesta/stdout-charges/mulliken_voronoi_hirshfeld_md
 * Running in serial mode (only 1 MPI rank).
->> Start of run:  10-APR-2024  18:01:36
+>> Start of run:  23-APR-2024  16:26:21
 
                            *********************** 
                            *  WELCOME TO SIESTA  * 
                            *********************** 
 
 reinit: Reading from standard input
-reinit: Dumping input in INPUT_TMP.10829
+reinit: Dumping input in INPUT_TMP.29503
 ************************** Dump of input data file ****************************
 LatticeConstant 1.0 Ang
 %block LatticeVectors
@@ -44,6 +44,7 @@ WriteVoronoiPop t
 PartialChargesAtEveryGeometry t
 #PartialChargesAtEverySCFStep t
 WriteMullikenPop 1
+Write.DMHS.History.NetCDF t
 ************************** End of input data file *****************************
 
 reinit: -----------------------------------------------------------------------
@@ -392,12 +393,12 @@ refcount: 1>
 new_DM -- step:     1
 Initializing Density Matrix...
 
-Attempting to read DM from file... Succeeded by reducing the number of spin-components...
+Attempting to read DM from file... Succeeded...
 DM from file:
 <dSpData2D:IO-DM: siesta.DM
   <sparsity:IO-DM: siesta.DM
     nrows_g=26 nrows=26 sparsity=1.0000 nnzs=676, refcount: 1>
-  <dData2D:(new from dSpData2D) n=676 m=2, refcount: 1>
+  <dData2D:(new from dSpData2D) n=676 m=1, refcount: 1>
 refcount: 1>
 DM to be used:
 <dSpData2D:Re-structured SpM
@@ -414,14 +415,14 @@ New grid distribution [1]: sub = 2
 stepf: Fermi-Dirac step function
 
 siesta: Program's energy decomposition (eV):
-siesta: Ebs     =       -99.350086
+siesta: Ebs     =       -99.350087
 siesta: Eions   =       564.310478
 siesta: Ena     =       150.800224
-siesta: Ekin    =       253.183830
+siesta: Ekin    =       253.183829
 siesta: Enl     =       -26.237907
 siesta: Eso     =         0.000000
 siesta: Edftu   =         0.000000
-siesta: DEna    =       -17.238966
+siesta: DEna    =       -17.238965
 siesta: DUscf   =         2.162240
 siesta: DUext   =         0.000000
 siesta: Ex      =      -103.341114
@@ -433,22 +434,22 @@ siesta: Emadel  =         0.000000
 siesta: Emeta   =         0.000000
 siesta: Emolmec =         0.000000
 siesta: Ekinion =         0.000000
-siesta: Eharris =      -318.796055
+siesta: Eharris =      -318.796052
 siesta: Etot    =      -318.886308
 siesta: FreeEng =      -318.886308
 
         iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
-   scf:    1     -318.796055     -318.886308     -318.886308  0.101705 -2.097954  0.143696
-timer: Routine,Calls,Time,% = IterSCF        1       0.166  19.03
-   scf:    2     -318.888274     -318.887524     -318.887524  0.008552 -2.096560  0.040859
-   scf:    3     -318.887705     -318.887625     -318.887625  0.001843 -2.096531  0.002305
-   scf:    4     -318.887626     -318.887626     -318.887626  0.000064 -2.096424  0.001679
-   scf:    5     -318.887626     -318.887626     -318.887626  0.000176 -2.096155  0.000171
+   scf:    1     -318.796052     -318.886308     -318.886308  0.101706 -2.097954  0.143702
+timer: Routine,Calls,Time,% = IterSCF        1       0.157  18.59
+   scf:    2     -318.888274     -318.887524     -318.887524  0.008553 -2.096560  0.040861
+   scf:    3     -318.887705     -318.887625     -318.887625  0.001844 -2.096531  0.002305
+   scf:    4     -318.887626     -318.887626     -318.887626  0.000064 -2.096424  0.001680
+   scf:    5     -318.887626     -318.887626     -318.887626  0.000176 -2.096155  0.000172
    scf:    6     -318.887626     -318.887626     -318.887626  0.000006 -2.096168  0.000105
 
 SCF Convergence by DM+H criterion
-max |DM_out - DM_in|         :     0.0000057757
-max |H_out - H_in|      (eV) :     0.0001052349
+max |DM_out - DM_in|         :     0.0000057845
+max |H_out - H_in|      (eV) :     0.0001052766
 SCF cycle converged after 6 iterations
 
 Using DM_out to compute the final energy and forces
@@ -478,7 +479,7 @@ siesta: Atomic forces (eV/Ang):
 ----------------------------------------
    Max    5.089505    constrained
 
-Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):     -126.48      -56.97        0.04        0.00        0.00       -0.00
+Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):     -126.48      -56.97        0.04        0.00        0.00        0.00
 (Free)E + p*V (eV/cell)     -316.0490
 Target enthalpy (eV/cell)     -318.8876
 
@@ -542,8 +543,8 @@ New grid distribution [1]: sub = 2
    scf:    6     -318.301367     -318.301367     -318.301367  0.000011 -2.029339  0.000466
 
 SCF Convergence by DM+H criterion
-max |DM_out - DM_in|         :     0.0000109381
-max |H_out - H_in|      (eV) :     0.0004662422
+max |DM_out - DM_in|         :     0.0000109376
+max |H_out - H_in|      (eV) :     0.0004662403
 SCF cycle converged after 6 iterations
 
 Using DM_out to compute the final energy and forces
@@ -564,14 +565,14 @@ siesta: E_KS(eV) =             -318.3014
 
 siesta: Atomic forces (eV/Ang):
 ----------------------------------------
-   Tot    0.019703    0.000000    0.000000
+   Tot    0.019703   -0.000000    0.000000
 ----------------------------------------
    Max   12.128255
    Res    6.996566    sqrt( Sum f_i^2 / 3N )
 ----------------------------------------
    Max   12.128255    constrained
 
-Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):      -13.36     -210.79        0.04       -0.00       -0.00       -0.00
+Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):      -13.36     -210.79        0.04       -0.00        0.00       -0.00
 (Free)E + p*V (eV/cell)     -314.8328
 Target enthalpy (eV/cell)     -318.3014
 
@@ -582,9 +583,9 @@ Atom  Qatom  Qorb
                2s      2s      2py     2pz     2px     2py     2pz     2px     
                3Pdxy   3Pdyz   3Pdz2   3Pdxz   3Pdx2-y2
    1  4.000   0.807   0.192   0.885   0.793   0.631   0.071   0.207   0.299
-              0.044  -0.000   0.004   0.000   0.067
+              0.044   0.000   0.004   0.000   0.067
    2  4.000   0.807   0.193   0.883   0.793   0.634   0.073   0.207   0.296
-              0.044  -0.000   0.004   0.000   0.066
+              0.044   0.000   0.004   0.000   0.066
 
 mulliken: Qtot =        8.000
 
@@ -635,8 +636,8 @@ New grid distribution [1]: sub = 2
    scf:    6     -318.986931     -318.986930     -318.986930  0.000026 -2.106599  0.000968
 
 SCF Convergence by DM+H criterion
-max |DM_out - DM_in|         :     0.0000261513
-max |H_out - H_in|      (eV) :     0.0009679876
+max |DM_out - DM_in|         :     0.0000261512
+max |H_out - H_in|      (eV) :     0.0009679870
 SCF cycle converged after 6 iterations
 
 Using DM_out to compute the final energy and forces
@@ -657,14 +658,14 @@ siesta: E_KS(eV) =             -318.9869
 
 siesta: Atomic forces (eV/Ang):
 ----------------------------------------
-   Tot    0.010504    0.000000    0.000000
+   Tot    0.010504   -0.000000    0.000000
 ----------------------------------------
    Max    0.519461
    Res    0.296894    sqrt( Sum f_i^2 / 3N )
 ----------------------------------------
    Max    0.519461    constrained
 
-Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):      -86.02      -92.59        0.03        0.00       -0.00        0.00
+Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):      -86.02      -92.59        0.03        0.00        0.00        0.00
 (Free)E + p*V (eV/cell)     -316.2231
 Target enthalpy (eV/cell)     -318.9869
 
@@ -722,7 +723,7 @@ siesta:         Exch. =    -103.327807
 siesta:         Corr. =     -13.903562
 siesta:     Bulk bias =       0.000000
 siesta:   Exch.-corr. =    -117.231369
-siesta:  Ion-electron =   -2270.512858
+siesta:  Ion-electron =   -2270.512857
 siesta:       Ion-ion =     791.893367
 siesta:       Ekinion =       0.000000
 siesta: D3 dispersion =       0.000000
@@ -730,15 +731,15 @@ siesta:         Total =    -318.986930
 siesta:         Fermi =      -2.106599
 
 siesta: Atomic forces (eV/Ang):
-siesta:      1    0.519461    0.000000    0.000000
+siesta:      1    0.519461   -0.000000    0.000000
 siesta:      2   -0.508957   -0.000000    0.000000
 siesta: ----------------------------------------
-siesta:    Tot    0.010504    0.000000    0.000000
+siesta:    Tot    0.010504   -0.000000    0.000000
 
 siesta: Stress tensor (static) (eV/Ang**3):
 siesta:    -0.053689   -0.000000   -0.000000
 siesta:     0.000000   -0.057788   -0.000000
-siesta:    -0.000000    0.000000    0.000020
+siesta:     0.000000    0.000000    0.000020
 
 siesta: Cell volume =         74.390404 Ang**3
 
@@ -746,7 +747,7 @@ siesta: Pressure (static):
 siesta:                Solid            Molecule  Units
 siesta:           0.00040464          0.00044038  Ry/Bohr**3
 siesta:           0.03715242          0.04043397  eV/Ang**3
-siesta:          59.52474283         64.78236070  kBar
+siesta:          59.52474246         64.78236030  kBar
 (Free)E+ p_basis*V_orbitals  =        -318.205235
 (Free)Eharris+ p_basis*V_orbitals  =        -318.205235
 
@@ -761,65 +762,65 @@ cite: which are encouraged to be cited in a published work.
           DOI: www.doi.org/10.1088/0953-8984/14/11/302
 
 
-timer: Elapsed wall time (sec) =       8.988
+timer: Elapsed wall time (sec) =       8.573
 timer: CPU execution times (sec):
 
 Routine            Calls   Time/call    Tot.time        %
-siesta                 1       8.977       8.977   100.00
-Setup                  1       0.090       0.090     1.00
+siesta                 1       8.558       8.558   100.00
+Setup                  1       0.086       0.086     1.01
 bands                  1       0.000       0.000     0.00
 KSV_init               1       0.000       0.000     0.00
-IterGeom               3       2.962       8.886    98.99
-geom_init              3       0.449       1.346    15.00
-state_init             3       0.034       0.101     1.12
-hsparse                3       0.001       0.002     0.02
-overlap                3       0.032       0.097     1.08
-Setup_H0               3       0.257       0.771     8.59
-naefs                  6       0.000       0.001     0.01
+IterGeom               3       2.824       8.471    98.98
+geom_init              3       0.434       1.303    15.23
+state_init             3       0.033       0.100     1.17
+hsparse                3       0.001       0.002     0.03
+overlap                3       0.032       0.096     1.12
+Setup_H0               3       0.251       0.754     8.82
+naefs                  6       0.000       0.000     0.00
 MolMec                 6       0.000       0.000     0.00
-kinefsm                6       0.018       0.109     1.21
-nlefsm                 6       0.018       0.108     1.21
-DHSCF_Init             3       0.196       0.588     6.55
-DHSCF1                 3       0.022       0.065     0.73
+kinefsm                6       0.017       0.103     1.21
+nlefsm                 6       0.018       0.110     1.28
+DHSCF_Init             3       0.191       0.573     6.70
+DHSCF1                 3       0.021       0.062     0.72
 INITMESH               3       0.000       0.000     0.00
-DHSCF2                 3       0.174       0.522     5.82
-REMESH                 3       0.008       0.025     0.28
-REORD                 99       0.000       0.009     0.10
-PHION                  3       0.141       0.423     4.71
+DHSCF2                 3       0.171       0.512     5.98
+REMESH                 3       0.008       0.024     0.28
+REORD                 99       0.000       0.008     0.10
+PHION                  3       0.139       0.417     4.87
 COMM_BSC             111       0.000       0.007     0.08
-POISON                27       0.009       0.234     2.61
-fft                   54       0.004       0.207     2.31
-setup_H               21       0.165       3.469    38.64
-DHSCF                 24       0.332       7.958    88.65
-DHSCF3                24       0.186       4.467    49.76
-rhoofd                24       0.089       2.128    23.70
-XC                    24       0.005       0.120     1.34
-GXC-CellXC            24       0.005       0.114     1.28
-gridxc@cellXC         24       0.005       0.114     1.27
-vmat                  24       0.061       1.466    16.33
-IterSCF               18       0.167       3.002    33.45
-compute_dm            18       0.000       0.005     0.05
-diagon                18       0.000       0.005     0.05
-r-eigvec              18       0.000       0.004     0.04
+POISON                27       0.008       0.222     2.60
+fft                   54       0.004       0.196     2.29
+setup_H               21       0.152       3.202    37.41
+DHSCF                 24       0.315       7.561    88.34
+DHSCF3                24       0.174       4.170    48.73
+rhoofd                24       0.083       1.984    23.19
+XC                    24       0.005       0.114     1.34
+GXC-CellXC            24       0.005       0.109     1.27
+gridxc@cellXC         24       0.005       0.109     1.27
+vmat                  24       0.056       1.351    15.79
+IterSCF               18       0.153       2.762    32.28
+compute_dm            18       0.000       0.006     0.07
+diagon                18       0.000       0.004     0.05
+r-eigvec              18       0.000       0.003     0.04
 r-buildHS             18       0.000       0.000     0.00
-rdiag                 18       0.000       0.004     0.04
+rdiag                 18       0.000       0.003     0.04
 rdiag1                18       0.000       0.000     0.00
-rdiag2                18       0.000       0.000     0.01
-rdiag3                18       0.000       0.003     0.03
+rdiag2                18       0.000       0.000     0.00
+rdiag3                18       0.000       0.002     0.03
 rdiag4                18       0.000       0.000     0.00
 r-buildD              18       0.000       0.001     0.01
 MIXER                 15       0.000       0.000     0.00
-PostSCF                3       1.512       4.536    50.53
-partial-charges        3       0.169       0.508     5.65
-DHSCF4                 3       1.164       3.491    38.89
-dfscf                  3       1.147       3.442    38.34
-overfsm                3       0.004       0.012     0.13
+PostSCF                3       1.468       4.404    51.45
+partial-charges        3       0.163       0.489     5.71
+DHSCF4                 3       1.130       3.391    39.62
+dfscf                  3       1.114       3.343    39.06
+overfsm                3       0.004       0.011     0.12
 writeHSX               3       0.000       0.000     0.00
 state_analysis         3       0.000       0.001     0.01
 siesta_move            3       0.000       0.000     0.00
-Analysis               1       0.001       0.001     0.01
+Analysis               1       0.000       0.000     0.01
 optical                1       0.000       0.000     0.00
   
 
->> End of run:  10-APR-2024  18:01:45
+>> End of run:  23-APR-2024  16:26:30
 Job completed
