@@ -22,3 +22,4 @@ PartialChargesAtEveryGeometry t
 #PartialChargesAtEverySCFStep t
 Spin non-colinear
 WriteMullikenPop 1
+Write.DMHS.History.NetCDF t
