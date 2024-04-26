@@ -1,0 +1,46 @@
+Geometry = GenFormat {
+3 C
+  O H
+
+  1 1  0.00000000000E+00 -0.10000000000E+01  0.00000000000E+00
+  2 2  0.00000000000E+00  0.00000000000E+00  0.78306400000E+00
+  3 2  0.00000000000E+00  0.00000000000E+00 -0.78306400000E+00
+}
+
+Driver = GeometryOptimization {
+  Optimizer = Rational {}
+  MovedAtoms = 1:-1
+  MaxSteps = 100
+  OutputPrefix = "geom.out"
+  Convergence {GradElem = 1E-4}
+}
+
+Hamiltonian = DFTB {
+  Scc = Yes
+  SlaterKosterFiles = Type2FileNames {
+    Prefix = "/opt/generic/dftb-slako/24-043/mio/mio-1-1/"
+    Separator = "-"
+    Suffix = ".skf"
+    LowerCaseTypeName = No
+  }
+  MaxAngularMomentum {
+    O = "p"
+    H = "s"
+  }
+}
+
+Parallel {
+  UseOmpThreads = Yes
+}
+
+Options {
+  WriteRealHS = Yes
+}
+
+Analysis {
+  PrintForces = Yes
+}
+
+ParserOptions {
+  ParserVersion = 14
+}
