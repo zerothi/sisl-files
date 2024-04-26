@@ -52,13 +52,15 @@ Each test needs to retain a very strict layout:
   - which version of the code was used
   - date-stamp of the run
   - which additional files are required, and how to obtain them.
-    This would encompass pseudo-potentials, or files otherwise
+    This could encompass pseudo-potentials, or files otherwise
     shipped standardly with the software (no need to fill with
     easily obtained files).
     Ideally, links to the files should be present, or a description
     on how to obtain them.
     (Please check each code `<code-name>/README.md` which may contain
-    this information).
+    this information).  
+    Please see in the `static` folder whether some files can already
+    be located.
   - A test which requires several runs should have sub-folders
     which should be thoroughly documented in the `README.md` file
     on their relation, order of execution, etc.
