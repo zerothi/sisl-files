@@ -1,0 +1,45 @@
+SystemName           si2
+SystemLabel          si2
+
+NumberOfAtoms        2
+LatticeConstant      10.0  Ang
+
+%block LatticeVectors
+1.0 0.0 0.0
+0.0 1.0 0.0
+0.0 0.0 1.0
+%endblock LatticeVectors
+
+AtomicCoordinatesFormat   NotScaledCartesianAng
+
+%block ChemicalSpeciesLabel
+   1  14 Si_
+%endblock ChemicalSpeciesLabel
+
+%block PAO.Basis
+ Si_   2
+   n=3   0   1
+    0.0
+   n=3   1   1
+    0.0
+%endblock PAO.Basis
+
+%block AtomicCoordinatesAndAtomicSpecies
+ 0.000   0.000   0.000  1   28.086
+ 2.3516  0.000   0.000  1   28.086
+%endblock AtomicCoordinatesAndAtomicSpecies
+
+SuperCell_1          0
+SuperCell_2          0
+SuperCell_3          0
+
+AtomicDispl          0.04  Bohr
+
+BandLinesScale       pi/a
+%block BandLines
+ 1  0.000  0.000  0.000  \Gamma
+10  1.000  0.000  0.000  X
+10  1.000  1.000  0.000  M
+%endblock BandLines
+
+Eigenvectors  T
