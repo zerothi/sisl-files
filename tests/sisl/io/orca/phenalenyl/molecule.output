@@ -136,7 +136,7 @@
 
 
 ***************************************
-The coordinates will be read from file: molecule3.xyz
+The coordinates will be read from file: molecule.xyz
 ***************************************
 
 
@@ -173,13 +173,13 @@ INFO   : the flag for use of the SHARK integral package has been found!
 ================================================================================
                                        INPUT FILE
 ================================================================================
-NAME = molecule3_epr.inp
+NAME = molecule.inp
 |  1> !B3LYP EPR-II AUTOAUX
 |  2> % maxcore 16384
 |  3> %pal
 |  4>    nprocs 24
 |  5> end
-|  6> * XYZFile 0 2 molecule3.xyz
+|  6> * XYZFile 0 2 molecule.xyz
 |  7> %EPRNMR
 |  8>         GTENSOR   TRUE
 |  9>         NUCLEI    = ALL C {AISO, ADIP}
@@ -449,7 +449,7 @@ Atom  21H    basis set group =>   2
 ------------------------------------------------------------------------------
 
 
-Reading SHARK input file molecule3_epr.SHARKINP.tmp ... ok
+Reading SHARK input file molecule.SHARKINP.tmp ... ok
 ----------------------
 SHARK INTEGRAL PACKAGE
 ----------------------
@@ -540,7 +540,7 @@ Hamiltonian:
 
 
 General Settings:
- Integral files         IntName         .... molecule3_epr
+ Integral files         IntName         .... molecule
  Hartree-Fock type      HFTyp           .... UHF
  Total Charge           Charge          ....    0
  Multiplicity           Mult            ....    2
@@ -790,9 +790,9 @@ SCF CONVERGENCE
   Last RMS-Density change    ...    0.0000e+00  Tolerance :   1.0000e-06
   Last DIIS Error            ...    1.4296e-05  Tolerance :   1.0000e-06
 
-             **** THE GBW FILE WAS UPDATED (molecule3_epr.gbw) ****
-             **** DENSITY molecule3_epr.scfp WAS UPDATED ****
-             **** ENERGY FILE WAS UPDATED (molecule3_epr.en.tmp) ****
+             **** THE GBW FILE WAS UPDATED (molecule.gbw) ****
+             **** DENSITY molecule.scfp WAS UPDATED ****
+             **** ENERGY FILE WAS UPDATED (molecule.en.tmp) ****
 ----------------------
 UHF SPIN CONTAMINATION
 ----------------------
@@ -805,8 +805,8 @@ Expectation value of <S**2>     :     0.797470
 Ideal value S*(S+1) for S=0.5   :     0.750000
 Deviation                       :     0.047470
 
-             **** THE GBW FILE WAS UPDATED (molecule3_epr.gbw) ****
-             **** DENSITY molecule3_epr.scfp WAS UPDATED ****
+             **** THE GBW FILE WAS UPDATED (molecule.gbw) ****
+             **** DENSITY molecule.scfp WAS UPDATED ****
 ----------------
 ORBITAL ENERGIES
 ----------------
@@ -2177,8 +2177,8 @@ FINAL SINGLE POINT ENERGY      -500.544162263663
 Dipole Moment Calculation                       ... on
 Quadrupole Moment Calculation                   ... off
 Polarizability Calculation                      ... off
-GBWName                                         ... molecule3_epr.gbw
-Electron density                                ... molecule3_epr.scfp
+GBWName                                         ... molecule.gbw
+Electron density                                ... molecule.scfp
 The origin for moment calculation is the CENTER OF MASS  = ( 8.050248,  0.000000 -0.000000)
 
 -------------
@@ -2217,9 +2217,9 @@ x,y,z [Debye]:     0.000006    -0.001101    -0.000001
                          ORCA SPIN-ORBIT COUPLING CALCULATION
 ------------------------------------------------------------------------------
 
-GBW file                                    ... molecule3_epr.gbw
-Input density                               ... molecule3_epr.scfp
-Output integrals                            ... molecule3_epr
+GBW file                                    ... molecule.gbw
+Input density                               ... molecule.scfp
+Output integrals                            ... molecule
 Operator type                               ... Mean-field/Effective potential
    One-Electron Terms                       ... 1
    Coulomb Contribution                     ... 3
@@ -2242,10 +2242,10 @@ Total time for SOC:  5.254
                                 ORCA EPR/NMR CALCULATION
 ------------------------------------------------------------------------------
 
-GBWName                      ... molecule3_epr.gbw
-Electron density             ... molecule3_epr.scfp
-Spin density                 ... molecule3_epr.scfr
-Spin-orbit integrals         ... molecule3_epr
+GBWName                      ... molecule.gbw
+Electron density             ... molecule.scfp
+Spin density                 ... molecule.scfr
+Spin-orbit integrals         ... molecule
 Treatment of gauge           ... GIAO (approximations 1/2el = 0,0)
 Details of the CP(SCF) procedure:
        Solver   = POPLE   
@@ -2469,9 +2469,9 @@ Average number of grid points per atom       ...     4836
                            ORCA CP-SCF CALCULATION
 ------------------------------------------------------------------------------
 
-Input orbitals are from        ... molecule3_epr.gbw
-Input Perturbation             ... molecule3_epr.pin.tmp
-Wavefunction output            ... molecule3_epr.pout.tmp
+Input orbitals are from        ... molecule.gbw
+Input Perturbation             ... molecule.pin.tmp
+Wavefunction output            ... molecule.pout.tmp
 Perturbation mode              ... Imaginary perturbation
 Solver                         ... POPLE
 Max. number of iterations      ... 64

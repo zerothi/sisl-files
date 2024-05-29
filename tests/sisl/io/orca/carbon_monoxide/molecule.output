@@ -136,7 +136,7 @@
 
 
 ***************************************
-The coordinates will be read from file: molecule2.xyz
+The coordinates will be read from file: molecule.xyz
 ***************************************
 
 
@@ -176,14 +176,14 @@ INFO   : the flag for use of the SHARK integral package has been found!
 ================================================================================
                                        INPUT FILE
 ================================================================================
-NAME = molecule2.inp
+NAME = molecule.inp
 |  1> !PBE D3 DEF2-TZVP OPT
 |  2> 
 |  3> %pal
 |  4>    nprocs 2
 |  5> end
 |  6> 
-|  7> * XYZFile 0 1 molecule2.xyz
+|  7> * XYZFile 0 1 molecule.xyz
 |  8> 
 |  9>                          ****END OF INPUT****
 ================================================================================
@@ -310,7 +310,7 @@ Atom   1O    basis set group =>   2
 ------------------------------------------------------------------------------
 
 
-Reading SHARK input file molecule2.SHARKINP.tmp ... ok
+Reading SHARK input file molecule.SHARKINP.tmp ... ok
 ----------------------
 SHARK INTEGRAL PACKAGE
 ----------------------
@@ -391,7 +391,7 @@ Hamiltonian:
 
 
 General Settings:
- Integral files         IntName         .... molecule2
+ Integral files         IntName         .... molecule
  Hartree-Fock type      HFTyp           .... RHF
  Total Charge           Charge          ....    0
  Multiplicity           Mult            ....    1
@@ -580,11 +580,11 @@ SCF CONVERGENCE
   Last Orbital Gradient      ...    1.8402e-06  Tolerance :   1.0000e-05
   Last Orbital Rotation      ...    1.2540e-06  Tolerance :   1.0000e-05
 
-             **** THE GBW FILE WAS UPDATED (molecule2.gbw) ****
-             **** DENSITY molecule2.scfp WAS UPDATED ****
-             **** ENERGY FILE WAS UPDATED (molecule2.en.tmp) ****
-             **** THE GBW FILE WAS UPDATED (molecule2.gbw) ****
-             **** DENSITY molecule2.scfp WAS UPDATED ****
+             **** THE GBW FILE WAS UPDATED (molecule.gbw) ****
+             **** DENSITY molecule.scfp WAS UPDATED ****
+             **** ENERGY FILE WAS UPDATED (molecule.en.tmp) ****
+             **** THE GBW FILE WAS UPDATED (molecule.gbw) ****
+             **** DENSITY molecule.scfp WAS UPDATED ****
 ----------------
 ORBITAL ENERGIES
 ----------------
@@ -1027,7 +1027,7 @@ Atom   1O    basis set group =>   2
 ------------------------------------------------------------------------------
 
 
-Reading SHARK input file molecule2.SHARKINP.tmp ... ok
+Reading SHARK input file molecule.SHARKINP.tmp ... ok
 ----------------------
 SHARK INTEGRAL PACKAGE
 ----------------------
@@ -1108,7 +1108,7 @@ Hamiltonian:
 
 
 General Settings:
- Integral files         IntName         .... molecule2
+ Integral files         IntName         .... molecule
  Hartree-Fock type      HFTyp           .... RHF
  Total Charge           Charge          ....    0
  Multiplicity           Mult            ....    1
@@ -1185,7 +1185,7 @@ Total time needed                          ...    0.013 sec
 ---------------------
 INITIAL GUESS: MOREAD
 ---------------------
-Guess MOs are being read from file: molecule2.gbw
+Guess MOs are being read from file: molecule.gbw
 Input Geometry matches current geometry (good)
 Input basis set matches current basis set (good)
 MOs were renormalized
@@ -1271,11 +1271,11 @@ SCF CONVERGENCE
   Last Orbital Gradient      ...    1.7365e-06  Tolerance :   1.0000e-05
   Last Orbital Rotation      ...    4.8508e-06  Tolerance :   1.0000e-05
 
-             **** THE GBW FILE WAS UPDATED (molecule2.gbw) ****
-             **** DENSITY molecule2.scfp WAS UPDATED ****
-             **** ENERGY FILE WAS UPDATED (molecule2.en.tmp) ****
-             **** THE GBW FILE WAS UPDATED (molecule2.gbw) ****
-             **** DENSITY molecule2.scfp WAS UPDATED ****
+             **** THE GBW FILE WAS UPDATED (molecule.gbw) ****
+             **** DENSITY molecule.scfp WAS UPDATED ****
+             **** ENERGY FILE WAS UPDATED (molecule.en.tmp) ****
+             **** THE GBW FILE WAS UPDATED (molecule.gbw) ****
+             **** DENSITY molecule.scfp WAS UPDATED ****
 ----------------
 ORBITAL ENERGIES
 ----------------
@@ -1539,8 +1539,8 @@ FINAL SINGLE POINT ENERGY      -113.234775530875
 Dipole Moment Calculation                       ... on
 Quadrupole Moment Calculation                   ... off
 Polarizability Calculation                      ... off
-GBWName                                         ... molecule2.gbw
-Electron density                                ... molecule2.scfp
+GBWName                                         ... molecule.gbw
+Electron density                                ... molecule.scfp
 The origin for moment calculation is the CENTER OF MASS  = ( 2.042616,  0.000000  0.000000)
 
 -------------
