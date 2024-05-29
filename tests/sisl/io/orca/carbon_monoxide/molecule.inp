@@ -1,0 +1,7 @@
+!PBE D3 DEF2-TZVP OPT
+
+%pal
+   nprocs 2
+end
+
+* XYZFile 0 1 molecule.xyz
