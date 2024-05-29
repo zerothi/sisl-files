@@ -70,7 +70,7 @@ $ SCF_Electric_Properties
    description: The SCF Calculated Electric Properties
    geom. index: 2
    prop. index: 1
-       Filename                          : molecule2.scfp 
+       Filename                          : molecule.scfp 
        Do Dipole Moment Calculation      : true 
        Do Quadrupole Moment Calculation  : false 
        Do Polarizability Calculation     : false 
