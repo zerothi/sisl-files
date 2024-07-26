@@ -1,0 +1,7 @@
+# DOS calculated from the spectral function, k-averaged
+# Date: 2024-07-25
+#   E [eV]       DOS [1/eV]
+  -0.75000   0.52991035E+00
+  -0.25000   0.24193923E-06
+   0.25000   0.25969302E-06
+   0.75000   0.51613825E+00
