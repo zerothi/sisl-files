@@ -38,3 +38,5 @@ do
     echo "$hash already cherry-picked by: $out"
   fi
 done
+
+git checkout main
