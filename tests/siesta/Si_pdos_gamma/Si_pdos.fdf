@@ -1,0 +1,41 @@
+SystemName   Si bulk
+SystemLabel Si_pdos
+
+PAO.BasisSize       SZP
+
+LatticeConstant     5.430 Ang
+%block LatticeVectors
+  0.000  0.500  0.500
+  0.500  0.000  0.500
+  0.500  0.500  0.000
+%endblock LatticeVectors
+
+kgrid.MonkhorstPack [5 5 5]
+
+MeshCutoff          150.0 Ry
+
+%block ChemicalSpeciesLabel
+ 1  14  Si
+%endblock ChemicalSpeciesLabel
+
+AtomicCoordinatesFormat  ScaledCartesian
+%block AtomicCoordinatesAndAtomicSpecies
+    0.000    0.000    0.000   1 #  Si  1
+    0.250    0.250    0.250   1 #  Si  2
+%endblock AtomicCoordinatesAndAtomicSpecies
+
+XC.Functional GGA
+XC.Authors    PBE
+
+MaxSCFIterations 50
+SCF.Mixer.Weight 0.01
+SCF.Mixer.History 10
+
+ElectronicTemperature 10 meV
+Mesh.Cutoff 300 Ry
+
+PDOS.kgrid.MonkhorstPack [1 1 1]
+%block ProjectedDensityOfStates
+EF -1.00 1.00 0.200000 200 eV
+%endblock ProjectedDensityOfStates
+
