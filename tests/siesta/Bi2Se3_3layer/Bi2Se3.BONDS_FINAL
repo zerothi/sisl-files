@@ -1,0 +1,87 @@
+Neighbors of:     1 Bi at:   3.9098  2.2573 24.3636
+    7 Se                    2.9710  Ang. Really at:   7.8197  4.5147 21.0260
+    7 Se                    2.9710  Ang. Really at:   3.9098 -2.2573 21.0260
+    7 Se                    2.9710  Ang. Really at:  -0.0000  4.5147 21.0260
+    8 Se                    3.0405  Ang. Really at:   7.8197 -0.0000 27.9176
+    8 Se                    3.0405  Ang. Really at:   3.9098  6.7720 27.9176
+    8 Se                    3.0405  Ang. Really at:   0.0000 -0.0000 27.9176
+Neighbors of:     2 Bi at:  -0.0000  4.5147 31.4715
+    9 Se                    2.9710  Ang. Really at:   3.9098  2.2573 34.8091
+    9 Se                    2.9710  Ang. Really at:   0.0000  9.0294 34.8091
+    9 Se                    2.9710  Ang. Really at:  -3.9098  2.2573 34.8091
+    8 Se                    3.0405  Ang. Really at:   3.9098  6.7720 27.9176
+    8 Se                    3.0405  Ang. Really at:  -3.9098  6.7720 27.9176
+    8 Se                    3.0405  Ang. Really at:  -0.0000 -0.0000 27.9176
+Neighbors of:     3 Bi at:  -0.0000  4.5147 42.4041
+   10 Se                    2.9710  Ang. Really at:   3.9098  6.7720 39.0666
+   10 Se                    2.9710  Ang. Really at:  -0.0000 -0.0000 39.0666
+   10 Se                    2.9710  Ang. Really at:  -3.9098  6.7720 39.0666
+   11 Se                    3.0405  Ang. Really at:   3.9098  2.2573 45.9581
+   11 Se                    3.0405  Ang. Really at:   0.0000  9.0294 45.9581
+   11 Se                    3.0405  Ang. Really at:  -3.9098  2.2573 45.9581
+Neighbors of:     4 Bi at:   0.0000  0.0000 49.5121
+   12 Se                    2.9710  Ang. Really at:   3.9098 -2.2573 52.8496
+   12 Se                    2.9710  Ang. Really at:  -0.0000  4.5147 52.8496
+   12 Se                    2.9710  Ang. Really at:  -3.9098 -2.2573 52.8496
+   11 Se                    3.0405  Ang. Really at:   3.9098  2.2573 45.9581
+   11 Se                    3.0405  Ang. Really at:  -3.9098  2.2573 45.9581
+   11 Se                    3.0405  Ang. Really at:   0.0000 -4.5147 45.9581
+Neighbors of:     5 Bi at:   0.0000  0.0000 60.4447
+   13 Se                    2.9710  Ang. Really at:   3.9098  2.2573 57.1072
+   13 Se                    2.9710  Ang. Really at:   0.0000 -4.5147 57.1072
+   13 Se                    2.9710  Ang. Really at:  -3.9098  2.2573 57.1072
+   14 Se                    3.0405  Ang. Really at:   3.9098 -2.2573 63.9987
+   14 Se                    3.0405  Ang. Really at:  -0.0000  4.5147 63.9987
+   14 Se                    3.0405  Ang. Really at:  -3.9098 -2.2573 63.9987
+Neighbors of:     6 Bi at:   3.9098  2.2573 67.5527
+   15 Se                    2.9710  Ang. Really at:   7.8197 -0.0000 70.8902
+   15 Se                    2.9710  Ang. Really at:   3.9098  6.7720 70.8902
+   15 Se                    2.9710  Ang. Really at:   0.0000 -0.0000 70.8902
+   14 Se                    3.0405  Ang. Really at:   7.8197  4.5147 63.9987
+   14 Se                    3.0405  Ang. Really at:  -0.0000  4.5147 63.9987
+   14 Se                    3.0405  Ang. Really at:   3.9098 -2.2573 63.9987
+Neighbors of:     7 Se at:  -0.0000  4.5147 21.0260
+    1 Bi                    2.9710  Ang. Really at:   3.9098  2.2573 24.3636
+    1 Bi                    2.9710  Ang. Really at:   0.0000  9.0294 24.3636
+    1 Bi                    2.9710  Ang. Really at:  -3.9098  2.2573 24.3636
+Neighbors of:     8 Se at:   0.0000  0.0000 27.9176
+    2 Bi                    3.0405  Ang. Really at:   3.9098 -2.2573 31.4715
+    2 Bi                    3.0405  Ang. Really at:  -0.0000  4.5147 31.4715
+    2 Bi                    3.0405  Ang. Really at:  -3.9098 -2.2573 31.4715
+    1 Bi                    3.0405  Ang. Really at:   3.9098  2.2573 24.3636
+    1 Bi                    3.0405  Ang. Really at:  -3.9098  2.2573 24.3636
+    1 Bi                    3.0405  Ang. Really at:   0.0000 -4.5147 24.3636
+Neighbors of:     9 Se at:   3.9098  2.2573 34.8091
+    2 Bi                    2.9710  Ang. Really at:   7.8197  4.5147 31.4715
+    2 Bi                    2.9710  Ang. Really at:  -0.0000  4.5147 31.4715
+    2 Bi                    2.9710  Ang. Really at:   3.9098 -2.2573 31.4715
+Neighbors of:    10 Se at:   0.0000  0.0000 39.0666
+    3 Bi                    2.9710  Ang. Really at:   3.9098 -2.2573 42.4041
+    3 Bi                    2.9710  Ang. Really at:  -0.0000  4.5147 42.4041
+    3 Bi                    2.9710  Ang. Really at:  -3.9098 -2.2573 42.4041
+Neighbors of:    11 Se at:   3.9098  2.2573 45.9581
+    4 Bi                    3.0405  Ang. Really at:   7.8197 -0.0000 49.5121
+    4 Bi                    3.0405  Ang. Really at:   3.9098  6.7720 49.5121
+    4 Bi                    3.0405  Ang. Really at:   0.0000 -0.0000 49.5121
+    3 Bi                    3.0405  Ang. Really at:   7.8197  4.5147 42.4041
+    3 Bi                    3.0405  Ang. Really at:  -0.0000  4.5147 42.4041
+    3 Bi                    3.0405  Ang. Really at:   3.9098 -2.2573 42.4041
+Neighbors of:    12 Se at:  -0.0000  4.5147 52.8496
+    4 Bi                    2.9710  Ang. Really at:   3.9098  6.7720 49.5121
+    4 Bi                    2.9710  Ang. Really at:  -3.9098  6.7720 49.5121
+    4 Bi                    2.9710  Ang. Really at:  -0.0000 -0.0000 49.5121
+Neighbors of:    13 Se at:   3.9098  2.2573 57.1072
+    5 Bi                    2.9710  Ang. Really at:   7.8197 -0.0000 60.4447
+    5 Bi                    2.9710  Ang. Really at:   3.9098  6.7720 60.4447
+    5 Bi                    2.9710  Ang. Really at:   0.0000 -0.0000 60.4447
+Neighbors of:    14 Se at:  -0.0000  4.5147 63.9987
+    6 Bi                    3.0405  Ang. Really at:   3.9098  2.2573 67.5527
+    6 Bi                    3.0405  Ang. Really at:   0.0000  9.0294 67.5527
+    6 Bi                    3.0405  Ang. Really at:  -3.9098  2.2573 67.5527
+    5 Bi                    3.0405  Ang. Really at:   3.9098  6.7720 60.4447
+    5 Bi                    3.0405  Ang. Really at:  -3.9098  6.7720 60.4447
+    5 Bi                    3.0405  Ang. Really at:  -0.0000 -0.0000 60.4447
+Neighbors of:    15 Se at:   0.0000  0.0000 70.8902
+    6 Bi                    2.9710  Ang. Really at:   3.9098  2.2573 67.5527
+    6 Bi                    2.9710  Ang. Really at:  -3.9098  2.2573 67.5527
+    6 Bi                    2.9710  Ang. Really at:   0.0000 -4.5147 67.5527
