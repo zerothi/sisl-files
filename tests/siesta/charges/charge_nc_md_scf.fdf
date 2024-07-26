@@ -1,0 +1,4 @@
+%include ../base.fdf
+PartialChargesAtEveryGeometry t
+PartialChargesAtEverySCFStep t
+Spin non-colinear
