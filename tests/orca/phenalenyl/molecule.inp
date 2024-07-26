@@ -1,0 +1,11 @@
+!B3LYP EPR-II AUTOAUX
+% maxcore 16384
+%pal
+   nprocs 6
+end
+* XYZFile 0 2 molecule.xyz
+%EPRNMR
+        GTENSOR   TRUE
+        NUCLEI    = ALL C {AISO, ADIP}
+        NUCLEI    = ALL H {AISO, ADIP}
+END
