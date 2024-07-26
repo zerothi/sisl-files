@@ -1,0 +1,11 @@
+!PBE DEF2-TZVP OPT
+
+%pal
+   nprocs 2
+end
+
+%output
+printlevel huge
+end
+
+* XYZFile 0 2 molecule.xyz
