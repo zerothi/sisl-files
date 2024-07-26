@@ -1,0 +1,33 @@
+SystemName     h_chain_vibra                                                                   
+SystemLabel     h_chain_vibra                                                                   
+NumberOfAtoms              2
+LatticeConstant          7.558904499           Bohr
+# above item originally: LatticeConstant          4.000000000     Ang       
+%block LatticeVectors
+    2.0000000000   0.0000000000    0.0000000000
+    0.0000000000   5.0000000000    0.0000000000
+    0.0000000000   0.0000000000    5.0000000000
+SuperCell_1              1
+SuperCell_2              0
+SuperCell_3              0
+AtomicCoordinatesFormat     ScaledCartesian                                                                 
+%block AtomicCoordinatesAndAtomicSpecies
+    0.00  0.50  0.50  1  1  H
+    1.00  0.50  0.50  1  1  H
+%block BandLines
+LatticeConstant          7.558904499           Bohr
+# above item originally: LatticeConstant          4.000000000     Ang       
+BandLinesScale     ReciprocalLatticeVectors                                                        
+%block LatticeVectors
+    2.0000000000   0.0000000000    0.0000000000
+    0.0000000000   5.0000000000    0.0000000000
+    0.0000000000   0.0000000000    5.0000000000
+%block BandLines
+   1  0.0   0.0   0.0   \Gamma
+  50  0.5   0.0   0.0   X
+  50  1.0   0.0   0.0   \Gamma
+%endblock BandLines
+Intensities              F     # default value
+Eigenvectors              T
+Vibra.FC     h_chain_vibra.FC     # default value
+SystemLabel     h_chain_vibra                                                                   
