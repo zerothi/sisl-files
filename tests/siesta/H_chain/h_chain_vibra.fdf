@@ -1,0 +1,55 @@
+SystemName h_chain_vibra
+SystemLabel h_chain_vibra
+
+# ----------------------------------------------------------------------------
+#  Geometry and Basis
+# ----------------------------------------------------------------------------
+NumberOfSpecies 1
+%block ChemicalSpeciesLabel
+     1  1  H
+%endblock ChemicalSpeciesLabel
+
+LatticeConstant 4.00 Ang
+%block LatticeVectors
+   2.0000000000   0.0000000000    0.0000000000
+   0.0000000000   5.0000000000    0.0000000000
+   0.0000000000   0.0000000000    5.0000000000
+%endblock LatticeVectors
+
+NumberOfAtoms 2
+AtomicCoordinatesFormat  ScaledCartesian
+%block AtomicCoordinatesAndAtomicSpecies
+   0.00  0.50  0.50  1  1  H
+   1.00  0.50  0.50  1  1  H
+%endblock AtomicCoordinatesAndAtomicSpecies
+
+PAO.BasisSize SZ
+
+# ----------------------------------------------------------------------------
+#  FC options
+# ----------------------------------------------------------------------------
+MD.TypeOfRun FC
+MD.FCfirst   3
+MD.FClast    4
+MD.FCdispl   0.02 Bohr
+%block AtomicMass
+	1 1.00784
+%endblock AtomicMass
+
+# ----------------------------------------------------------------------------
+#  Vibra options
+# ----------------------------------------------------------------------------
+SuperCell_1  1
+SuperCell_2  0
+SuperCell_3  0
+
+AtomicDispl  0.02 Bohr
+
+BandLinesScale   ReciprocalLatticeVectors
+%block BandLines
+  1  0.0   0.0   0.0   \Gamma
+ 50  0.5   0.0   0.0   X
+ 50  1.0   0.0   0.0   \Gamma
+%endblock BandLines
+
+Eigenvectors true
