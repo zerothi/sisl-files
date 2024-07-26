@@ -1,0 +1,29 @@
+{
+ "global_section": { "_calls": 1, "_time":        0.260, "_%":   100.00,
+   "tbtrans": { "_calls": 1, "_time":        0.260, "_%":   100.00,
+     "init-region+sp": { "_calls": 1, "_time":        0.001, "_%":     0.28},
+     "pivot-elec": { "_calls": 1, "_time":        0.000, "_%":     0.15,
+       "pivot": { "_calls": 1, "_time":        0.000, "_%":     0.08}
+     },
+     "pivot-device": { "_calls": 1, "_time":        0.000, "_%":     0.12,
+       "pivot": { "_calls": 1, "_time":        0.000, "_%":     0.08}
+     },
+     "tri-init": { "_calls": 1, "_time":        0.001, "_%":     0.35,
+       "tri-init-elec": { "_calls": 1, "_time":        0.000, "_%":     0.09,
+         "TS-rgn2tri": { "_calls": 1, "_time":        0.000, "_%":     0.06}
+       },
+       "TS-rgn2tri": { "_calls": 1, "_time":        0.000, "_%":     0.07}
+     },
+     "TBT": { "_calls": 1, "_time":        0.246, "_%":    94.90,
+       "read-GS": { "_calls": 11, "_time":        0.099, "_%":    38.11},
+       "SE-dwn": { "_calls": 11, "_time":        0.005, "_%":     2.06,
+         "ts_expand": { "_calls": 22, "_time":        0.000, "_%":     0.02}
+       },
+       "Gf-prep": { "_calls": 11, "_time":        0.013, "_%":     5.04,
+         "V_TM_Pinv": { "_calls": 11, "_time":        0.012, "_%":     4.71}
+       },
+       "analysis": { "_calls": 11, "_time":        0.072, "_%":    27.76},
+       "cdf2ascii": { "_calls": 1, "_time":        0.016, "_%":     6.07}
+     }
+   }
+ }}
