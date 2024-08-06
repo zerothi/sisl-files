@@ -9,6 +9,7 @@
 if [ $# -eq 0 ]; then
   echo "Please supply one or more file name(s) for cherry-picking"
   echo "them to the stripped branch"
+  exit 1
 fi
 
 branch=stripped
